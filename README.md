@@ -1,1 +1,1 @@
-# Project5-Use-API-OpenFoodFacts
+# Use public data of OpenFoodFacts
