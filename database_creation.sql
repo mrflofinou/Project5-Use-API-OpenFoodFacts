@@ -1,9 +1,10 @@
 -- Création des tables
 
-CREATE TABLE Categorie (
+CREATE TABLE Categorie_sql (
   id INT UNSIGNED AUTO_INCREMENT,
-  nom_categorie VARCHAR(150) NOT NULL,
+  nom VARCHAR(150) NOT NULL,
   description TEXT,
-  PRIMARY KEY(id)
+  PRIMARY KEY(id),
+  FULLTEXT ind_nom_categorie (nom)
 )
-;
+ENGINE=INNODB;
