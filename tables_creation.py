@@ -5,6 +5,8 @@
 This file create the tables of the database with the ORM SQLAlchemy
 """
 
+import json
+
 from database import engine, Base, Session, Category
 
 
@@ -14,11 +16,14 @@ session = Session()
 Base.metadata.create_all(engine)
 
 # Creation of categories
-category_fruits = Category("Fruits", "Que des bons fruits")
-category_biscuits = Category("biscuits", "Tous ce qui est sucré et qui croustille")
+i = 0
+for cat in json.load(open('categories.json')):
+    category = Category(cat['category'])
+    # Add the modification in database
+    session.add(category)
+    i += 1
+    if i == 2:
+        break
 
-# Add the modification in database
-session.add(category_fruits)
-session.add(category_biscuits)
 session.commit()
 session.close()
