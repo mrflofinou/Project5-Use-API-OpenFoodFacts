@@ -15,4 +15,4 @@ print(resp.status_code)
 
 # Save the JSON data in a file
 with open("categories.json", "w") as categories:
-    json.dump(data, categories, ensure_ascii=False)
+    json.dump(data, categories, ensure_ascii=False, indent=4, sort_keys=True)
