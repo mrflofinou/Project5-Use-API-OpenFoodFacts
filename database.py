@@ -2,25 +2,19 @@
 # coding: utf-8
 
 """
-This file define the tables of the database with the ORM SQLAlchemy
+This file defines the tables of the database with the ORM SQLAlchemy
 The tabeles are:
     - categories
     - foods
 """
 
 
-from sqlalchemy import create_engine, Column, Integer, String, Index, Text, ForeignKey
+from sqlalchemy import Column, Integer, String, Index, Text, ForeignKey
 from sqlalchemy.dialects.mysql import INTEGER
-from sqlalchemy.orm import sessionmaker, relationship
+from sqlalchemy.orm import relationship
 from sqlalchemy.ext.declarative import declarative_base
 
-import settings as s
 
-
-# Creation of engine with our database (here mysql) and the DBAPI (here pymysql)
-# DON'T FORGET THE CHARSET UTF8 !
-engine = create_engine('mysql+pymysql://{}:{}@localhost/test_projet05?charset=utf8&use_unicode=0'.format(s.username, s.password))
-Session = sessionmaker(bind=engine)
 Base = declarative_base()
 
 
@@ -38,11 +32,11 @@ class Category(Base):
         self.name = name
 
 
-class Food(Base):
+class Product(Base):
     """
     This class is for create the table of foods
     """
-    __tablename__ = "foods"
+    __tablename__ = "products"
 
     id = Column(INTEGER(unsigned=True), primary_key=True)
     name = Column(String(150), nullable=False)
