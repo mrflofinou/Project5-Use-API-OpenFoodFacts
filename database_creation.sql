@@ -1,10 +1,23 @@
+-- Création de la base de donnée
+
+CREATE DATABASE openfoodfacts CHARACTER SET 'utf8';
+
 -- Création des tables
 
-CREATE TABLE Categorie_sql (
+CREATE TABLE categories (
   id INT UNSIGNED AUTO_INCREMENT,
   nom VARCHAR(150) NOT NULL,
-  description TEXT,
+  PRIMARY KEY(id)
+)
+ENGINE=INNODB;
+
+CREATE TABLE products (
+  id INT UNSIGNED AUTO_INCREMENT,
+  name VARCHAR(150) NOT NULL,
+  id_category INT UNSIGNED,
   PRIMARY KEY(id),
-  FULLTEXT ind_nom_categorie (nom)
+  CONSTRAINT fk_id_category
+    FOREIGN KEY (id_category)
+    REFERENCES categories (id)
 )
 ENGINE=INNODB;
