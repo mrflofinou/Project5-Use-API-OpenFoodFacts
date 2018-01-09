@@ -14,20 +14,32 @@ from database import Category
 
 def main():
     session = Session()
+    # To make a SELECT query
     categories = session.query(Category).all()
-    # Choose a category
-    print("\nTapez le chiffre correspodant à votre choix:")
-    print("\n1 - Catégories")
-    print("2 - Aliments enregistrés")
-    home_choice = int(input("\nQue voulez-vous faire ? "))
-    if home_choice == 1:
-        print("Vous voulez afficher les catégories des aliments")
-        print('\n----Catégories----')
-        for category in categories:
-            print("{:02d} | {}".format(category.id, category.name))
-        print('\n')
-
-
+    loop = True
+    while loop:
+        # Choose a category
+        print("\nVeuillez choisir le chiffre correspodant à votre choix:\n")
+        print("1 - Catégories")
+        print("2 - Aliments enregistrés")
+        # This try-except block check the input is an integer
+        try:
+            home_choice = int(input("\nQue voulez-vous faire ? "))
+            # Display the categories
+            if home_choice == 1:
+                print("Vous voulez afficher les catégories d'aliments")
+                print('\n----Catégories----')
+                for category in categories:
+                    print("{:02d} | {}".format(category.id, category.name))
+                print('\n')
+                loop = False
+            # Display the saved products
+            elif home_choice == 2:
+                print("\n---- SECTION EN COURS DE DEVELOPPEMENT ----\n")
+            else:
+                print("Votre choix ne correspond pas à ceux proposés\n")
+        except:
+            print("\nVotre saisie est incorrect\n")
 
 if __name__ == "__main__":
     main()
