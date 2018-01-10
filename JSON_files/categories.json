@@ -4,43 +4,43 @@
         {
             "id": "en:plant-based-foods-and-beverages",
             "name": "Aliments et boissons à base de végétaux",
-            "products": 26177,
+            "products": 26185,
             "url": "https://fr.openfoodfacts.org/categorie/aliments-et-boissons-a-base-de-vegetaux"
         },
         {
             "id": "en:plant-based-foods",
             "name": "Aliments d'origine végétale",
-            "products": 22205,
+            "products": 22211,
             "url": "https://fr.openfoodfacts.org/categorie/aliments-d-origine-vegetale"
         },
         {
             "id": "en:beverages",
             "name": "Boissons",
-            "products": 17279,
+            "products": 17308,
             "url": "https://fr.openfoodfacts.org/categorie/boissons"
         },
         {
             "id": "en:sugary-snacks",
             "name": "Snacks sucrés",
-            "products": 12941,
+            "products": 12951,
             "url": "https://fr.openfoodfacts.org/categorie/snacks-sucres"
         },
         {
             "id": "en:dairies",
             "name": "Produits laitiers",
-            "products": 9851,
+            "products": 9858,
             "url": "https://fr.openfoodfacts.org/categorie/produits-laitiers"
         },
         {
             "id": "en:meals",
             "name": "Plats préparés",
-            "products": 8660,
+            "products": 8661,
             "url": "https://fr.openfoodfacts.org/categorie/plats-prepares"
         },
         {
             "id": "en:non-sugared-beverages",
             "name": "Boissons non sucrées",
-            "products": 8509,
+            "products": 8533,
             "url": "https://fr.openfoodfacts.org/categorie/boissons-non-sucrees"
         },
         {
@@ -52,19 +52,19 @@
         {
             "id": "en:fruits-and-vegetables-based-foods",
             "name": "Aliments à base de fruits et de légumes",
-            "products": 7484,
+            "products": 7489,
             "url": "https://fr.openfoodfacts.org/categorie/aliments-a-base-de-fruits-et-de-legumes"
         },
         {
             "id": "en:fermented-foods",
             "name": "Produits fermentés",
-            "products": 6405,
+            "products": 6411,
             "url": "https://fr.openfoodfacts.org/categorie/produits-fermentes"
         },
         {
             "id": "en:fermented-milk-products",
             "name": "Fermented milk products",
-            "products": 6403,
+            "products": 6409,
             "url": "https://fr.openfoodfacts.org/categorie/fermented-milk-products"
         },
         {
@@ -76,7 +76,7 @@
         {
             "id": "en:biscuits-and-cakes",
             "name": "Biscuits et gâteaux",
-            "products": 5734,
+            "products": 5733,
             "url": "https://fr.openfoodfacts.org/categorie/biscuits-et-gateaux"
         },
         {
@@ -88,7 +88,7 @@
         {
             "id": "en:desserts",
             "name": "Desserts",
-            "products": 5451,
+            "products": 5452,
             "url": "https://fr.openfoodfacts.org/categorie/desserts"
         },
         {
@@ -100,7 +100,7 @@
         {
             "id": "en:spreads",
             "name": "Produits à tartiner",
-            "products": 4861,
+            "products": 4866,
             "url": "https://fr.openfoodfacts.org/categorie/produits-a-tartiner"
         },
         {
@@ -112,25 +112,25 @@
         {
             "id": "en:plant-based-beverages",
             "name": "Boissons à base de végétaux",
-            "products": 4673,
+            "products": 4675,
             "url": "https://fr.openfoodfacts.org/categorie/boissons-a-base-de-vegetaux"
         },
         {
             "id": "en:breakfasts",
             "name": "Petit-déjeuners",
-            "products": 4625,
+            "products": 4629,
             "url": "https://fr.openfoodfacts.org/categorie/petit-dejeuners"
         },
         {
             "id": "en:canned-foods",
             "name": "Conserves",
-            "products": 4574,
+            "products": 4575,
             "url": "https://fr.openfoodfacts.org/categorie/conserves"
         },
         {
             "id": "en:cheeses",
             "name": "Fromages",
-            "products": 4181,
+            "products": 4185,
             "url": "https://fr.openfoodfacts.org/categorie/fromages"
         },
         {
@@ -148,7 +148,7 @@
         {
             "id": "en:fruits-based-foods",
             "name": "Fruits et produits dérivés",
-            "products": 3843,
+            "products": 3848,
             "url": "https://fr.openfoodfacts.org/categorie/fruits-et-produits-derives"
         },
         {
@@ -166,13 +166,13 @@
         {
             "id": "en:chocolates",
             "name": "Chocolats",
-            "products": 3296,
+            "products": 3304,
             "url": "https://fr.openfoodfacts.org/categorie/chocolats"
         },
         {
             "id": "en:seafood",
             "name": "Produits de la mer",
-            "products": 3174,
+            "products": 3175,
             "url": "https://fr.openfoodfacts.org/categorie/produits-de-la-mer"
         },
         {
@@ -184,13 +184,13 @@
         {
             "id": "en:fats",
             "name": "Matières grasses",
-            "products": 3148,
+            "products": 3156,
             "url": "https://fr.openfoodfacts.org/categorie/matieres-grasses"
         },
         {
             "id": "en:fruit-based-beverages",
             "name": "Boissons aux fruits",
-            "products": 3101,
+            "products": 3102,
             "url": "https://fr.openfoodfacts.org/categorie/boissons-aux-fruits"
         },
         {
@@ -202,19 +202,19 @@
         {
             "id": "en:alcoholic-beverages",
             "name": "Boissons alcoolisées",
-            "products": 3035,
+            "products": 3039,
             "url": "https://fr.openfoodfacts.org/categorie/boissons-alcoolisees"
         },
         {
             "id": "en:confectioneries",
             "name": "Confiseries",
-            "products": 2958,
+            "products": 2960,
             "url": "https://fr.openfoodfacts.org/categorie/confiseries"
         },
         {
             "id": "en:sweet-spreads",
             "name": "Produits à tartiner sucrés",
-            "products": 2619,
+            "products": 2623,
             "url": "https://fr.openfoodfacts.org/categorie/produits-a-tartiner-sucres"
         },
         {
@@ -226,25 +226,25 @@
         {
             "id": "en:juices-and-nectars",
             "name": "Jus et nectars",
-            "products": 2380,
+            "products": 2381,
             "url": "https://fr.openfoodfacts.org/categorie/jus-et-nectars"
         },
         {
             "id": "en:non-alcoholic-beverages",
             "name": "Boissons sans alcool",
-            "products": 2369,
+            "products": 2370,
             "url": "https://fr.openfoodfacts.org/categorie/boissons-sans-alcool"
         },
         {
             "id": "en:fishes",
             "name": "Poissons",
-            "products": 2319,
+            "products": 2320,
             "url": "https://fr.openfoodfacts.org/categorie/poissons"
         },
         {
             "id": "en:fruit-juices-and-nectars",
             "name": "Jus et nectars de fruits",
-            "products": 2266,
+            "products": 2267,
             "url": "https://fr.openfoodfacts.org/categorie/jus-et-nectars-de-fruits"
         },
         {
@@ -268,13 +268,13 @@
         {
             "id": "en:plant-based-spreads",
             "name": "Pâtes à tartiner végétales",
-            "products": 1999,
+            "products": 2004,
             "url": "https://fr.openfoodfacts.org/categorie/pates-a-tartiner-vegetales"
         },
         {
             "id": "en:yogurts",
             "name": "Yaourts",
-            "products": 1939,
+            "products": 1941,
             "url": "https://fr.openfoodfacts.org/categorie/yaourts"
         },
         {
@@ -298,7 +298,7 @@
         {
             "id": "en:fruit-juices",
             "name": "Jus de fruits",
-            "products": 1873,
+            "products": 1874,
             "url": "https://fr.openfoodfacts.org/categorie/jus-de-fruits"
         },
         {
@@ -322,7 +322,7 @@
         {
             "id": "en:hot-beverages",
             "name": "Boissons chaudes",
-            "products": 1631,
+            "products": 1632,
             "url": "https://fr.openfoodfacts.org/categorie/boissons-chaudes"
         },
         {
@@ -340,25 +340,25 @@
         {
             "id": "en:milks",
             "name": "Laits",
-            "products": 1543,
+            "products": 1544,
             "url": "https://fr.openfoodfacts.org/categorie/laits"
         },
         {
             "id": "en:french-cheeses",
             "name": "Fromages de France",
-            "products": 1516,
+            "products": 1519,
             "url": "https://fr.openfoodfacts.org/categorie/fromages-de-france"
         },
         {
             "id": "en:candies",
             "name": "Bonbons",
-            "products": 1503,
+            "products": 1505,
             "url": "https://fr.openfoodfacts.org/categorie/bonbons"
         },
         {
             "id": "en:dried-products",
             "name": "Produits déshydratés",
-            "products": 1457,
+            "products": 1459,
             "url": "https://fr.openfoodfacts.org/categorie/produits-deshydrates"
         },
         {
@@ -370,7 +370,7 @@
         {
             "id": "en:fruit-preserves",
             "name": "Confitures et marmelades",
-            "products": 1434,
+            "products": 1438,
             "url": "https://fr.openfoodfacts.org/categorie/confitures-et-marmelades"
         },
         {
@@ -382,7 +382,7 @@
         {
             "id": "en:legumes-and-their-products",
             "name": "Légumineuses et dérivés",
-            "products": 1407,
+            "products": 1408,
             "url": "https://fr.openfoodfacts.org/categorie/legumineuses-et-derives"
         },
         {
@@ -424,13 +424,13 @@
         {
             "id": "en:jams",
             "name": "Confitures",
-            "products": 1273,
+            "products": 1277,
             "url": "https://fr.openfoodfacts.org/categorie/confitures"
         },
         {
             "id": "en:beers",
             "name": "Bières",
-            "products": 1243,
+            "products": 1246,
             "url": "https://fr.openfoodfacts.org/categorie/bieres"
         },
         {
@@ -442,7 +442,7 @@
         {
             "id": "en:wines",
             "name": "Vins",
-            "products": 1210,
+            "products": 1211,
             "url": "https://fr.openfoodfacts.org/categorie/vins"
         },
         {
@@ -452,16 +452,16 @@
             "url": "https://fr.openfoodfacts.org/categorie/produits-d-elevages"
         },
         {
-            "id": "en:nuts-and-their-products",
-            "name": "Fruits à coques et dérivés",
-            "products": 1178,
-            "url": "https://fr.openfoodfacts.org/categorie/fruits-a-coques-et-derives"
-        },
-        {
             "id": "en:dark-chocolates",
             "name": "Chocolats noirs",
-            "products": 1175,
+            "products": 1180,
             "url": "https://fr.openfoodfacts.org/categorie/chocolats-noirs"
+        },
+        {
+            "id": "en:nuts-and-their-products",
+            "name": "Fruits à coques et dérivés",
+            "products": 1179,
+            "url": "https://fr.openfoodfacts.org/categorie/fruits-a-coques-et-derives"
         },
         {
             "id": "en:chips-and-fries",
@@ -478,7 +478,7 @@
         {
             "id": "en:fruit-jams",
             "name": "Confitures de fruits",
-            "products": 1119,
+            "products": 1123,
             "url": "https://fr.openfoodfacts.org/categorie/confitures-de-fruits"
         },
         {
@@ -520,7 +520,7 @@
         {
             "id": "en:frozen-desserts",
             "name": "Desserts glacés",
-            "products": 1026,
+            "products": 1027,
             "url": "https://fr.openfoodfacts.org/categorie/desserts-glaces"
         },
         {
@@ -532,13 +532,13 @@
         {
             "id": "en:canned-fishes",
             "name": "Poissons en conserve",
-            "products": 1015,
+            "products": 1016,
             "url": "https://fr.openfoodfacts.org/categorie/poissons-en-conserve"
         },
         {
             "id": "en:milk-chocolates",
             "name": "Chocolats au lait",
-            "products": 973,
+            "products": 974,
             "url": "https://fr.openfoodfacts.org/categorie/chocolats-au-lait"
         },
         {
@@ -574,7 +574,7 @@
         {
             "id": "en:herbal-teas",
             "name": "Infusions",
-            "products": 923,
+            "products": 924,
             "url": "https://fr.openfoodfacts.org/categorie/infusions"
         },
         {
@@ -586,7 +586,7 @@
         {
             "id": "en:viennoiseries",
             "name": "Viennoiseries",
-            "products": 889,
+            "products": 890,
             "url": "https://fr.openfoodfacts.org/categorie/viennoiseries"
         },
         {
@@ -616,20 +616,20 @@
         {
             "id": "en:french-wines",
             "name": "Vins français",
-            "products": 836,
+            "products": 837,
             "url": "https://fr.openfoodfacts.org/categorie/vins-francais"
+        },
+        {
+            "id": "en:dried-plant-based-foods",
+            "name": "Aliments à base de plantes séchées",
+            "products": 822,
+            "url": "https://fr.openfoodfacts.org/categorie/aliments-a-base-de-plantes-sechees"
         },
         {
             "id": "en:flakes",
             "name": "Flocons",
             "products": 822,
             "url": "https://fr.openfoodfacts.org/categorie/flocons"
-        },
-        {
-            "id": "en:dried-plant-based-foods",
-            "name": "Aliments à base de plantes séchées",
-            "products": 821,
-            "url": "https://fr.openfoodfacts.org/categorie/aliments-a-base-de-plantes-sechees"
         },
         {
             "id": "en:cereal-flakes",
@@ -700,7 +700,7 @@
         {
             "id": "en:fruit-yogurts",
             "name": "Yaourts aux fruits",
-            "products": 719,
+            "products": 720,
             "url": "https://fr.openfoodfacts.org/categorie/yaourts-aux-fruits"
         },
         {
@@ -742,7 +742,7 @@
         {
             "id": "en:fish-and-meat-and-eggs",
             "name": "Poissons et viandes et oeufs",
-            "products": 696,
+            "products": 697,
             "url": "https://fr.openfoodfacts.org/categorie/poissons-et-viandes-et-oeufs"
         },
         {
@@ -802,7 +802,7 @@
         {
             "id": "en:dried-fruits",
             "name": "Fruits secs",
-            "products": 631,
+            "products": 632,
             "url": "https://fr.openfoodfacts.org/categorie/fruits-secs"
         },
         {
@@ -856,7 +856,7 @@
         {
             "id": "fr:foies-gras",
             "name": "Foies gras",
-            "products": 570,
+            "products": 571,
             "url": "https://fr.openfoodfacts.org/categorie/foies-gras"
         },
         {
@@ -884,6 +884,12 @@
             "url": "https://fr.openfoodfacts.org/categorie/matieres-grasses-animales"
         },
         {
+            "id": "en:berry-jams",
+            "name": "Confitures de fruits rouges",
+            "products": 547,
+            "url": "https://fr.openfoodfacts.org/categorie/confitures-de-fruits-rouges"
+        },
+        {
             "id": "en:pickles",
             "name": "Pickles",
             "products": 547,
@@ -892,14 +898,8 @@
         {
             "id": "en:brioches",
             "name": "Brioches",
-            "products": 544,
+            "products": 545,
             "url": "https://fr.openfoodfacts.org/categorie/brioches"
-        },
-        {
-            "id": "en:berry-jams",
-            "name": "Confitures de fruits rouges",
-            "products": 543,
-            "url": "https://fr.openfoodfacts.org/categorie/confitures-de-fruits-rouges"
         },
         {
             "id": "en:plant-based-pickles",
@@ -922,7 +922,7 @@
         {
             "id": "en:teas",
             "name": "Thés",
-            "products": 534,
+            "products": 535,
             "url": "https://fr.openfoodfacts.org/categorie/thes"
         },
         {
@@ -944,16 +944,16 @@
             "url": "https://fr.openfoodfacts.org/categorie/milkfat"
         },
         {
+            "id": "en:industrial-cheese",
+            "name": "Fromages industriels",
+            "products": 522,
+            "url": "https://fr.openfoodfacts.org/categorie/fromages-industriels"
+        },
+        {
             "id": "en:flavoured-syrups",
             "name": "Sirops aromatisés",
             "products": 521,
             "url": "https://fr.openfoodfacts.org/categorie/sirops-aromatises"
-        },
-        {
-            "id": "en:industrial-cheese",
-            "name": "Fromages industriels",
-            "products": 521,
-            "url": "https://fr.openfoodfacts.org/categorie/fromages-industriels"
         },
         {
             "id": "en:butters",
@@ -988,7 +988,7 @@
         {
             "id": "fr:foies-gras-de-canard",
             "name": "Foies gras de canard",
-            "products": 495,
+            "products": 496,
             "url": "https://fr.openfoodfacts.org/categorie/foies-gras-de-canard"
         },
         {
@@ -1004,6 +1004,12 @@
             "url": "https://fr.openfoodfacts.org/categorie/fromages-a-pate-pressee-cuite"
         },
         {
+            "id": "en:christmas-foods-and-drinks",
+            "name": "Aliments et boissons de Noël",
+            "products": 482,
+            "url": "https://fr.openfoodfacts.org/categorie/aliments-et-boissons-de-noel"
+        },
+        {
             "id": "en:tunas",
             "name": "Thons",
             "products": 482,
@@ -1014,12 +1020,6 @@
             "name": "Salades composées",
             "products": 482,
             "url": "https://fr.openfoodfacts.org/categorie/salades-composees"
-        },
-        {
-            "id": "en:christmas-foods-and-drinks",
-            "name": "Aliments et boissons de Noël",
-            "products": 481,
-            "url": "https://fr.openfoodfacts.org/categorie/aliments-et-boissons-de-noel"
         },
         {
             "id": "en:bird-eggs",
@@ -1060,13 +1060,13 @@
         {
             "id": "en:lagers",
             "name": "Bières blondes",
-            "products": 452,
+            "products": 453,
             "url": "https://fr.openfoodfacts.org/categorie/bieres-blondes"
         },
         {
             "id": "en:artisan-products",
             "name": "Produits artisanaux",
-            "products": 448,
+            "products": 451,
             "url": "https://fr.openfoodfacts.org/categorie/produits-artisanaux"
         },
         {
@@ -1088,16 +1088,16 @@
             "url": "https://fr.openfoodfacts.org/categorie/pizzas"
         },
         {
+            "id": "en:bonbons",
+            "name": "Bonbons de chocolat",
+            "products": 438,
+            "url": "https://fr.openfoodfacts.org/categorie/bonbons-de-chocolat"
+        },
+        {
             "id": "en:canned-sardines",
             "name": "Sardines en conserve",
             "products": 436,
             "url": "https://fr.openfoodfacts.org/categorie/sardines-en-conserve"
-        },
-        {
-            "id": "en:bonbons",
-            "name": "Bonbons de chocolat",
-            "products": 436,
-            "url": "https://fr.openfoodfacts.org/categorie/bonbons-de-chocolat"
         },
         {
             "id": "en:meals-with-fish",
@@ -1192,7 +1192,7 @@
         {
             "id": "en:pastries",
             "name": "Pâtisseries",
-            "products": 396,
+            "products": 395,
             "url": "https://fr.openfoodfacts.org/categorie/patisseries"
         },
         {
@@ -1352,16 +1352,16 @@
             "url": "https://fr.openfoodfacts.org/categorie/fromages-aoc"
         },
         {
+            "id": "en:artisanal-spirits",
+            "name": "Alcools artisanaux",
+            "products": 341,
+            "url": "https://fr.openfoodfacts.org/categorie/alcools-artisanaux"
+        },
+        {
             "id": "fr:fromages-blancs",
             "name": "Fromages blancs",
             "products": 341,
             "url": "https://fr.openfoodfacts.org/categorie/fromages-blancs"
-        },
-        {
-            "id": "en:artisanal-spirits",
-            "name": "Alcools artisanaux",
-            "products": 338,
-            "url": "https://fr.openfoodfacts.org/categorie/alcools-artisanaux"
         },
         {
             "id": "en:frozen-vegetables",
@@ -1460,16 +1460,16 @@
             "url": "https://fr.openfoodfacts.org/categorie/sardines-a-l-huile"
         },
         {
+            "id": "en:whole-milk-yogurts",
+            "name": "Yaourts entiers",
+            "products": 311,
+            "url": "https://fr.openfoodfacts.org/categorie/yaourts-entiers"
+        },
+        {
             "id": "en:ravioli",
             "name": "Ravioli",
             "products": 310,
             "url": "https://fr.openfoodfacts.org/categorie/ravioli"
-        },
-        {
-            "id": "en:whole-milk-yogurts",
-            "name": "Yaourts entiers",
-            "products": 310,
-            "url": "https://fr.openfoodfacts.org/categorie/yaourts-entiers"
         },
         {
             "id": "en:semi-skimmed-milks",
@@ -1484,22 +1484,22 @@
             "url": "https://fr.openfoodfacts.org/categorie/mayonnaises"
         },
         {
-            "id": "en:squeezed-orange-juices",
-            "name": "Jus d'orange 100% pur jus",
-            "products": 305,
-            "url": "https://fr.openfoodfacts.org/categorie/jus-d-orange-100-pur-jus"
-        },
-        {
             "id": "en:craft-beers",
             "name": "Bières artisanales",
-            "products": 304,
+            "products": 307,
             "url": "https://fr.openfoodfacts.org/categorie/bieres-artisanales"
         },
         {
             "id": "en:terrine",
             "name": "Terrines",
-            "products": 304,
+            "products": 306,
             "url": "https://fr.openfoodfacts.org/categorie/terrines"
+        },
+        {
+            "id": "en:squeezed-orange-juices",
+            "name": "Jus d'orange 100% pur jus",
+            "products": 305,
+            "url": "https://fr.openfoodfacts.org/categorie/jus-d-orange-100-pur-jus"
         },
         {
             "id": "en:stirred-yogurts",
@@ -1546,7 +1546,7 @@
         {
             "id": "en:dried-meals",
             "name": "Plats préparés déshydratés",
-            "products": 287,
+            "products": 288,
             "url": "https://fr.openfoodfacts.org/categorie/plats-prepares-deshydrates"
         },
         {
@@ -1556,16 +1556,16 @@
             "url": "https://fr.openfoodfacts.org/categorie/pates-a-tartiner-au-chocolat"
         },
         {
+            "id": "en:vinegars",
+            "name": "Vinaigres",
+            "products": 285,
+            "url": "https://fr.openfoodfacts.org/categorie/vinaigres"
+        },
+        {
             "id": "en:mushrooms-and-their-products",
             "name": "Champignons et produits dérivés",
             "products": 284,
             "url": "https://fr.openfoodfacts.org/categorie/champignons-et-produits-derives"
-        },
-        {
-            "id": "en:vinegars",
-            "name": "Vinaigres",
-            "products": 283,
-            "url": "https://fr.openfoodfacts.org/categorie/vinaigres"
         },
         {
             "id": "en:fresh-pasta",
@@ -1598,6 +1598,12 @@
             "url": "https://fr.openfoodfacts.org/categorie/fruits-en-conserve"
         },
         {
+            "id": "en:french-beers",
+            "name": "Bières françaises",
+            "products": 275,
+            "url": "https://fr.openfoodfacts.org/categorie/bieres-francaises"
+        },
+        {
             "id": "en:frozen-pizzas",
             "name": "Pizzas surgelées",
             "products": 273,
@@ -1608,12 +1614,6 @@
             "name": "Entrées",
             "products": 273,
             "url": "https://fr.openfoodfacts.org/categorie/entrees"
-        },
-        {
-            "id": "en:french-beers",
-            "name": "Bières françaises",
-            "products": 271,
-            "url": "https://fr.openfoodfacts.org/categorie/bieres-francaises"
         },
         {
             "id": "en:fruit-sodas",
@@ -1796,6 +1796,12 @@
             "url": "https://fr.openfoodfacts.org/categorie/oeufs-de-poules-elevees-en-plein-air"
         },
         {
+            "id": "fr:bloc-de-foie-gras",
+            "name": "Bloc de foie gras",
+            "products": 227,
+            "url": "https://fr.openfoodfacts.org/categorie/bloc-de-foie-gras"
+        },
+        {
             "id": "en:mackerels",
             "name": "Maquereaux",
             "products": 226,
@@ -1806,12 +1812,6 @@
             "name": "Pains spéciaux",
             "products": 226,
             "url": "https://fr.openfoodfacts.org/categorie/pains-speciaux"
-        },
-        {
-            "id": "fr:bloc-de-foie-gras",
-            "name": "Bloc de foie gras",
-            "products": 226,
-            "url": "https://fr.openfoodfacts.org/categorie/bloc-de-foie-gras"
         },
         {
             "id": "en:turkeys",
@@ -2018,6 +2018,12 @@
             "url": "https://fr.openfoodfacts.org/categorie/produits-a-teneur-reduite-en-sel"
         },
         {
+            "id": "en:strawberry-jams",
+            "name": "Confitures de fraises",
+            "products": 208,
+            "url": "https://fr.openfoodfacts.org/categorie/confitures-de-fraises"
+        },
+        {
             "id": "en:beef-steaks",
             "name": "Steaks de bœuf",
             "products": 207,
@@ -2034,12 +2040,6 @@
             "name": "Steaks",
             "products": 207,
             "url": "https://fr.openfoodfacts.org/categorie/steaks"
-        },
-        {
-            "id": "en:strawberry-jams",
-            "name": "Confitures de fraises",
-            "products": 206,
-            "url": "https://fr.openfoodfacts.org/categorie/confitures-de-fraises"
         },
         {
             "id": "en:salts",
@@ -2176,7 +2176,7 @@
         {
             "id": "en:green-teas",
             "name": "Thés verts",
-            "products": 183,
+            "products": 184,
             "url": "https://fr.openfoodfacts.org/categorie/thes-verts"
         },
         {
@@ -2234,6 +2234,12 @@
             "url": "https://fr.openfoodfacts.org/categorie/mollusques"
         },
         {
+            "id": "en:white-wines",
+            "name": "Vins blancs",
+            "products": 175,
+            "url": "https://fr.openfoodfacts.org/categorie/vins-blancs"
+        },
+        {
             "id": "en:black-teas",
             "name": "Thés noirs",
             "products": 175,
@@ -2252,16 +2258,16 @@
             "url": "https://fr.openfoodfacts.org/categorie/riz-de-variete-indica"
         },
         {
-            "id": "en:white-wines",
-            "name": "Vins blancs",
-            "products": 174,
-            "url": "https://fr.openfoodfacts.org/categorie/vins-blancs"
-        },
-        {
             "id": "en:products-without-gluten",
             "name": "Produits sans gluten",
             "products": 173,
             "url": "https://fr.openfoodfacts.org/categorie/produits-sans-gluten"
+        },
+        {
+            "id": "en:mountain-products",
+            "name": "Produits de montagne",
+            "products": 172,
+            "url": "https://fr.openfoodfacts.org/categorie/produits-de-montagne"
         },
         {
             "id": "en:chocolates-with-hazelnuts",
@@ -2280,12 +2286,6 @@
             "name": "Fruits à coque salés",
             "products": 169,
             "url": "https://fr.openfoodfacts.org/categorie/fruits-a-coque-sales"
-        },
-        {
-            "id": "en:mountain-products",
-            "name": "Produits de montagne",
-            "products": 169,
-            "url": "https://fr.openfoodfacts.org/categorie/produits-de-montagne"
         },
         {
             "id": "en:christmas-sweets",
@@ -2432,6 +2432,12 @@
             "url": "https://fr.openfoodfacts.org/categorie/sorbets"
         },
         {
+            "id": "en:oilseed-purees",
+            "name": "Purées d'oléagineux",
+            "products": 156,
+            "url": "https://fr.openfoodfacts.org/categorie/purees-d-oleagineux"
+        },
+        {
             "id": "en:poultry-sandwiches",
             "name": "Sandwichs à la volaille",
             "products": 155,
@@ -2448,12 +2454,6 @@
             "name": "Tomates en conserve",
             "products": 155,
             "url": "https://fr.openfoodfacts.org/categorie/tomates-en-conserve"
-        },
-        {
-            "id": "en:oilseed-purees",
-            "name": "Purées d'oléagineux",
-            "products": 155,
-            "url": "https://fr.openfoodfacts.org/categorie/purees-d-oleagineux"
         },
         {
             "id": "en:mueslis-with-chocolate",
@@ -2720,6 +2720,12 @@
             "url": "https://fr.openfoodfacts.org/categorie/preparations-de-viande-hachee"
         },
         {
+            "id": "en:nut-butters",
+            "name": "Beurres de fruits à coques",
+            "products": 135,
+            "url": "https://fr.openfoodfacts.org/categorie/beurres-de-fruits-a-coques"
+        },
+        {
             "id": "fr:cassoulets",
             "name": "Cassoulets",
             "products": 135,
@@ -2736,12 +2742,6 @@
             "name": "Fruits tropicaux",
             "products": 134,
             "url": "https://fr.openfoodfacts.org/categorie/fruits-tropicaux"
-        },
-        {
-            "id": "en:nut-butters",
-            "name": "Beurres de fruits à coques",
-            "products": 134,
-            "url": "https://fr.openfoodfacts.org/categorie/beurres-de-fruits-a-coques"
         },
         {
             "id": "en:fries",
@@ -2906,6 +2906,12 @@
             "url": "https://fr.openfoodfacts.org/categorie/assaisonnements"
         },
         {
+            "id": "en:balsamic-vinegars",
+            "name": "Vinaigres balsamiques",
+            "products": 123,
+            "url": "https://fr.openfoodfacts.org/categorie/vinaigres-balsamiques"
+        },
+        {
             "id": "fr:boudins",
             "name": "Boudins",
             "products": 123,
@@ -2928,12 +2934,6 @@
             "name": "Fromages des Pays-Bas",
             "products": 123,
             "url": "https://fr.openfoodfacts.org/categorie/fromages-des-pays-bas"
-        },
-        {
-            "id": "en:balsamic-vinegars",
-            "name": "Vinaigres balsamiques",
-            "products": 122,
-            "url": "https://fr.openfoodfacts.org/categorie/vinaigres-balsamiques"
         },
         {
             "id": "en:smoked-lardons",
@@ -3074,6 +3074,12 @@
             "url": "https://fr.openfoodfacts.org/categorie/cereales-en-conserve"
         },
         {
+            "id": "en:wheat-beers",
+            "name": "Bières blanches",
+            "products": 115,
+            "url": "https://fr.openfoodfacts.org/categorie/bieres-blanches"
+        },
+        {
             "id": "fr:purees",
             "name": "Purées",
             "products": 115,
@@ -3096,12 +3102,6 @@
             "name": "Chocolats fourrés au praliné",
             "products": 114,
             "url": "https://fr.openfoodfacts.org/categorie/chocolats-fourres-au-praline"
-        },
-        {
-            "id": "en:wheat-beers",
-            "name": "Bières blanches",
-            "products": 114,
-            "url": "https://fr.openfoodfacts.org/categorie/bieres-blanches"
         },
         {
             "id": "en:ice-cream-bars",
@@ -3302,6 +3302,12 @@
             "url": "https://fr.openfoodfacts.org/categorie/coquillettes"
         },
         {
+            "id": "en:raspberry-jams",
+            "name": "Confitures de framboises",
+            "products": 103,
+            "url": "https://fr.openfoodfacts.org/categorie/confitures-de-framboises"
+        },
+        {
             "id": "fr:raclettes",
             "name": "Raclettes",
             "products": 103,
@@ -3312,12 +3318,6 @@
             "name": "Céréales au miel",
             "products": 103,
             "url": "https://fr.openfoodfacts.org/categorie/cereales-au-miel"
-        },
-        {
-            "id": "en:raspberry-jams",
-            "name": "Confitures de framboises",
-            "products": 102,
-            "url": "https://fr.openfoodfacts.org/categorie/confitures-de-framboises"
         },
         {
             "id": "fr:camemberts-au-lait-cru",
@@ -3620,6 +3620,12 @@
             "url": "https://fr.openfoodfacts.org/categorie/gateaux-au-beurre"
         },
         {
+            "id": "en:dates",
+            "name": "Dattes",
+            "products": 93,
+            "url": "https://fr.openfoodfacts.org/categorie/dattes"
+        },
+        {
             "id": "en:potatoes",
             "name": "Pommes de terre",
             "products": 92,
@@ -3630,12 +3636,6 @@
             "name": "Brownies",
             "products": 92,
             "url": "https://fr.openfoodfacts.org/categorie/brownies"
-        },
-        {
-            "id": "en:dates",
-            "name": "Dattes",
-            "products": 92,
-            "url": "https://fr.openfoodfacts.org/categorie/dattes"
         },
         {
             "id": "en:pineapple-juices",
@@ -3950,6 +3950,12 @@
             "url": "https://fr.openfoodfacts.org/categorie/whiskys"
         },
         {
+            "id": "en:legume-butters",
+            "name": "Beurres de légumineuses",
+            "products": 83,
+            "url": "https://fr.openfoodfacts.org/categorie/beurres-de-legumineuses"
+        },
+        {
             "id": "en:marmalades",
             "name": "Marmelades",
             "products": 83,
@@ -3974,16 +3980,16 @@
             "url": "https://fr.openfoodfacts.org/categorie/chocolats-de-noel"
         },
         {
+            "id": "en:peanut-butters",
+            "name": "Beurres de cacahuètes",
+            "products": 83,
+            "url": "https://fr.openfoodfacts.org/categorie/beurres-de-cacahuetes"
+        },
+        {
             "id": "en:soy-sauces",
             "name": "Sauces au soja",
             "products": 82,
             "url": "https://fr.openfoodfacts.org/categorie/sauces-au-soja"
-        },
-        {
-            "id": "en:legume-butters",
-            "name": "Beurres de légumineuses",
-            "products": 82,
-            "url": "https://fr.openfoodfacts.org/categorie/beurres-de-legumineuses"
         },
         {
             "id": "en:mint-syrups",
@@ -4046,12 +4052,6 @@
             "url": "https://fr.openfoodfacts.org/categorie/tartes-sucrees"
         },
         {
-            "id": "en:peanut-butters",
-            "name": "Beurres de cacahuètes",
-            "products": 82,
-            "url": "https://fr.openfoodfacts.org/categorie/beurres-de-cacahuetes"
-        },
-        {
             "id": "en:mussels",
             "name": "Moules",
             "products": 81,
@@ -4074,6 +4074,12 @@
             "name": "Brioches tressées",
             "products": 81,
             "url": "https://fr.openfoodfacts.org/categorie/brioches-tressees"
+        },
+        {
+            "id": "en:mountain-cheeses",
+            "name": "Fromages de montagne",
+            "products": 81,
+            "url": "https://fr.openfoodfacts.org/categorie/fromages-de-montagne"
         },
         {
             "id": "en:cheese-ravioli",
@@ -4128,12 +4134,6 @@
             "name": "Terrines de campagne",
             "products": 78,
             "url": "https://fr.openfoodfacts.org/categorie/terrines-de-campagne"
-        },
-        {
-            "id": "en:mountain-cheeses",
-            "name": "Fromages de montagne",
-            "products": 78,
-            "url": "https://fr.openfoodfacts.org/categorie/fromages-de-montagne"
         },
         {
             "id": "en:pimented-sauces",
@@ -4298,6 +4298,12 @@
             "url": "https://fr.openfoodfacts.org/categorie/preparations-de-viande-hachees-surgelees"
         },
         {
+            "id": "en:mixed-fruit-jams",
+            "name": "Confitures multifruits",
+            "products": 74,
+            "url": "https://fr.openfoodfacts.org/categorie/confitures-multifruits"
+        },
+        {
             "id": "fr:chipolatas",
             "name": "Chipolatas",
             "products": 74,
@@ -4332,12 +4338,6 @@
             "name": "Bières fortes",
             "products": 73,
             "url": "https://fr.openfoodfacts.org/categorie/bieres-fortes"
-        },
-        {
-            "id": "en:mixed-fruit-jams",
-            "name": "Confitures multifruits",
-            "products": 73,
-            "url": "https://fr.openfoodfacts.org/categorie/confitures-multifruits"
         },
         {
             "id": "en:senseo-compatible-coffee-capsules",
@@ -4394,6 +4394,12 @@
             "url": "https://fr.openfoodfacts.org/categorie/lentilles-preparees"
         },
         {
+            "id": "en:lemon-juice",
+            "name": "Jus de citron",
+            "products": 72,
+            "url": "https://fr.openfoodfacts.org/categorie/jus-de-citron"
+        },
+        {
             "id": "fr:mousses-de-canard",
             "name": "Mousses de canard",
             "products": 72,
@@ -4404,12 +4410,6 @@
             "name": "Coulommiers",
             "products": 71,
             "url": "https://fr.openfoodfacts.org/categorie/coulommiers"
-        },
-        {
-            "id": "en:lemon-juice",
-            "name": "Jus de citron",
-            "products": 71,
-            "url": "https://fr.openfoodfacts.org/categorie/jus-de-citron"
         },
         {
             "id": "en:popcorn",
@@ -4724,10 +4724,22 @@
             "url": "https://fr.openfoodfacts.org/categorie/fromages-au-lait-de-bufflonne"
         },
         {
+            "id": "fr:foies-gras-mi-cuits",
+            "name": "Foies gras mi-cuits",
+            "products": 64,
+            "url": "https://fr.openfoodfacts.org/categorie/foies-gras-mi-cuits"
+        },
+        {
             "id": "en:barbecue-sauces",
             "name": "Sauces barbecue",
             "products": 64,
             "url": "https://fr.openfoodfacts.org/categorie/sauces-barbecue"
+        },
+        {
+            "id": "fr:tommes",
+            "name": "Tommes",
+            "products": 64,
+            "url": "https://fr.openfoodfacts.org/categorie/tommes"
         },
         {
             "id": "en:common-beans",
@@ -4746,12 +4758,6 @@
             "name": "Chocolats au lait extra fin",
             "products": 64,
             "url": "https://fr.openfoodfacts.org/categorie/chocolats-au-lait-extra-fin"
-        },
-        {
-            "id": "fr:foies-gras-mi-cuits",
-            "name": "Foies gras mi-cuits",
-            "products": 63,
-            "url": "https://fr.openfoodfacts.org/categorie/foies-gras-mi-cuits"
         },
         {
             "id": "en:burgundy-wines",
@@ -4790,6 +4796,12 @@
             "url": "https://fr.openfoodfacts.org/categorie/crepes-fourrees"
         },
         {
+            "id": "en:stout",
+            "name": "Bières brunes",
+            "products": 62,
+            "url": "https://fr.openfoodfacts.org/categorie/bieres-brunes"
+        },
+        {
             "id": "en:pizza-dough",
             "name": "Pâtes à pizza",
             "products": 62,
@@ -4826,18 +4838,6 @@
             "url": "https://fr.openfoodfacts.org/categorie/huiles-de-fruits-a-coques"
         },
         {
-            "id": "en:stout",
-            "name": "Bières brunes",
-            "products": 61,
-            "url": "https://fr.openfoodfacts.org/categorie/bieres-brunes"
-        },
-        {
-            "id": "fr:tommes",
-            "name": "Tommes",
-            "products": 61,
-            "url": "https://fr.openfoodfacts.org/categorie/tommes"
-        },
-        {
             "id": "en:frozen-legumes",
             "name": "Légumineuses surgelées",
             "products": 61,
@@ -4866,6 +4866,12 @@
             "name": "Sandwichs à l'emmental",
             "products": 60,
             "url": "https://fr.openfoodfacts.org/categorie/sandwichs-a-l-emmental"
+        },
+        {
+            "id": "en:organic-beers",
+            "name": "Bières bio",
+            "products": 60,
+            "url": "https://fr.openfoodfacts.org/categorie/bieres-bio"
         },
         {
             "id": "en:canned-white-common-beans",
@@ -4988,12 +4994,6 @@
             "url": "https://fr.openfoodfacts.org/categorie/en:snacks-sucres"
         },
         {
-            "id": "en:organic-beers",
-            "name": "Bières bio",
-            "products": 58,
-            "url": "https://fr.openfoodfacts.org/categorie/bieres-bio"
-        },
-        {
             "id": "en:pickled-gherkins",
             "name": "Cornichons au vinaigre",
             "products": 58,
@@ -5036,6 +5036,12 @@
             "url": "https://fr.openfoodfacts.org/categorie/blinis"
         },
         {
+            "id": "en:blueberry-yogurts",
+            "name": "Yaourts à la myrtille",
+            "products": 58,
+            "url": "https://fr.openfoodfacts.org/categorie/yaourts-a-la-myrtille"
+        },
+        {
             "id": "en:bries",
             "name": "Bries",
             "products": 58,
@@ -5066,6 +5072,12 @@
             "url": "https://fr.openfoodfacts.org/categorie/vinaigres-de-vin"
         },
         {
+            "id": "en:herring",
+            "name": "Harengs",
+            "products": 57,
+            "url": "https://fr.openfoodfacts.org/categorie/harengs"
+        },
+        {
             "id": "fr:risottos",
             "name": "Risottos",
             "products": 57,
@@ -5094,12 +5106,6 @@
             "name": "Asperges en conserve",
             "products": 57,
             "url": "https://fr.openfoodfacts.org/categorie/asperges-en-conserve"
-        },
-        {
-            "id": "en:blueberry-yogurts",
-            "name": "Yaourts à la myrtille",
-            "products": 57,
-            "url": "https://fr.openfoodfacts.org/categorie/yaourts-a-la-myrtille"
         },
         {
             "id": "en:veggie-burger-patties",
@@ -5142,12 +5148,6 @@
             "name": "Tortellini",
             "products": 56,
             "url": "https://fr.openfoodfacts.org/categorie/tortellini"
-        },
-        {
-            "id": "en:herring",
-            "name": "Harengs",
-            "products": 56,
-            "url": "https://fr.openfoodfacts.org/categorie/harengs"
         },
         {
             "id": "fr:macedoines-de-legumes-en-conserve",
@@ -5594,6 +5594,12 @@
             "url": "https://fr.openfoodfacts.org/categorie/taboules-frais"
         },
         {
+            "id": "en:mixed-berry-jams",
+            "name": "Confitures de fruits rouges mélanges",
+            "products": 48,
+            "url": "https://fr.openfoodfacts.org/categorie/confitures-de-fruits-rouges-melanges"
+        },
+        {
             "id": "en:concentrated-multifruit-juices",
             "name": "Jus multifruits à base de jus concentré",
             "products": 48,
@@ -5672,12 +5678,6 @@
             "url": "https://fr.openfoodfacts.org/categorie/cornichons-extra-fins"
         },
         {
-            "id": "en:mixed-berry-jams",
-            "name": "Confitures de fruits rouges mélanges",
-            "products": 47,
-            "url": "https://fr.openfoodfacts.org/categorie/confitures-de-fruits-rouges-melanges"
-        },
-        {
             "id": "en:canned-spinachs",
             "name": "Épinards en conserve",
             "products": 47,
@@ -5730,6 +5730,12 @@
             "name": "Tisanes de plantes mélangées",
             "products": 46,
             "url": "https://fr.openfoodfacts.org/categorie/tisanes-de-plantes-melangees"
+        },
+        {
+            "id": "en:chocolate-truffles",
+            "name": "Truffes en chocolat",
+            "products": 46,
+            "url": "https://fr.openfoodfacts.org/categorie/truffes-en-chocolat"
         },
         {
             "id": "en:dried-apricots",
@@ -5946,12 +5952,6 @@
             "name": "Marrons glacés",
             "products": 44,
             "url": "https://fr.openfoodfacts.org/categorie/marrons-glaces"
-        },
-        {
-            "id": "en:chocolate-truffles",
-            "name": "Truffes en chocolat",
-            "products": 44,
-            "url": "https://fr.openfoodfacts.org/categorie/truffes-en-chocolat"
         },
         {
             "id": "en:pre-baked-breads",
@@ -6404,12 +6404,6 @@
             "url": "https://fr.openfoodfacts.org/categorie/quenelles-de-brochet"
         },
         {
-            "id": "es:aliments-et-boissons-a-base-de-vegetaux",
-            "name": "es:Aliments-et-boissons-a-base-de-vegetaux",
-            "products": 38,
-            "url": "https://fr.openfoodfacts.org/categorie/es:aliments-et-boissons-a-base-de-vegetaux"
-        },
-        {
             "id": "en:orange-jams",
             "name": "Confitures d'orange",
             "products": 38,
@@ -6450,6 +6444,12 @@
             "name": "Champignons de Paris émincés en conserve",
             "products": 38,
             "url": "https://fr.openfoodfacts.org/categorie/champignons-de-paris-eminces-en-conserve"
+        },
+        {
+            "id": "es:aliments-et-boissons-a-base-de-vegetaux",
+            "name": "es:Aliments-et-boissons-a-base-de-vegetaux",
+            "products": 38,
+            "url": "https://fr.openfoodfacts.org/categorie/es:aliments-et-boissons-a-base-de-vegetaux"
         },
         {
             "id": "en:lemon-soft-drinks",
@@ -6522,6 +6522,12 @@
             "name": "Menus Viandes pour bébé",
             "products": 37,
             "url": "https://fr.openfoodfacts.org/categorie/menus-viandes-pour-bebe"
+        },
+        {
+            "id": "fr:pays-d-oc",
+            "name": "Pays d'Oc",
+            "products": 37,
+            "url": "https://fr.openfoodfacts.org/categorie/pays-d-oc"
         },
         {
             "id": "en:fortified-wines-such-as-natural-sweet-wines",
@@ -6672,12 +6678,6 @@
             "name": "Artichauts en conserve",
             "products": 36,
             "url": "https://fr.openfoodfacts.org/categorie/artichauts-en-conserve"
-        },
-        {
-            "id": "fr:pays-d-oc",
-            "name": "Pays d'Oc",
-            "products": 36,
-            "url": "https://fr.openfoodfacts.org/categorie/pays-d-oc"
         },
         {
             "id": "en:kiwifruits",
@@ -8480,6 +8480,12 @@
             "url": "https://fr.openfoodfacts.org/categorie/tortillas"
         },
         {
+            "id": "en:canned-herrings",
+            "name": "Harengs en conserve",
+            "products": 24,
+            "url": "https://fr.openfoodfacts.org/categorie/harengs-en-conserve"
+        },
+        {
             "id": "fr:chocolats-au-lait-aux-amandes",
             "name": "Chocolats au lait aux amandes",
             "products": 24,
@@ -8616,12 +8622,6 @@
             "name": "Poissons panés de cabillaud",
             "products": 23,
             "url": "https://fr.openfoodfacts.org/categorie/poissons-panes-de-cabillaud"
-        },
-        {
-            "id": "en:canned-herrings",
-            "name": "Harengs en conserve",
-            "products": 23,
-            "url": "https://fr.openfoodfacts.org/categorie/harengs-en-conserve"
         },
         {
             "id": "fr:nougats-de-montelimar",
@@ -9302,6 +9302,12 @@
             "url": "https://fr.openfoodfacts.org/categorie/jus-d-orange-sanguine"
         },
         {
+            "id": "fr:chicoree",
+            "name": "Chicoree",
+            "products": 20,
+            "url": "https://fr.openfoodfacts.org/categorie/chicoree"
+        },
+        {
             "id": "en:whole-black-olives",
             "name": "Olives noires entières",
             "products": 20,
@@ -9500,12 +9506,6 @@
             "url": "https://fr.openfoodfacts.org/categorie/menus-legumes-pour-bebe"
         },
         {
-            "id": "fr:chicoree",
-            "name": "Chicoree",
-            "products": 19,
-            "url": "https://fr.openfoodfacts.org/categorie/chicoree"
-        },
-        {
             "id": "fr:saucissons-cuits",
             "name": "Saucissons cuits",
             "products": 19,
@@ -9620,6 +9620,12 @@
             "url": "https://fr.openfoodfacts.org/categorie/roquette"
         },
         {
+            "id": "fr:bieres-rousses",
+            "name": "Bières rousses",
+            "products": 18,
+            "url": "https://fr.openfoodfacts.org/categorie/bieres-rousses"
+        },
+        {
             "id": "en:honey-mustards",
             "name": "Moutardes au miel",
             "products": 18,
@@ -9630,12 +9636,6 @@
             "name": "Pommes dauphines",
             "products": 18,
             "url": "https://fr.openfoodfacts.org/categorie/pommes-dauphines"
-        },
-        {
-            "id": "en:non-food-products",
-            "name": "Non alimentaire",
-            "products": 18,
-            "url": "https://fr.openfoodfacts.org/categorie/non-alimentaire"
         },
         {
             "id": "en:gambas",
@@ -9840,12 +9840,6 @@
             "name": "Noix de Saint-Jacques",
             "products": 18,
             "url": "https://fr.openfoodfacts.org/categorie/noix-de-saint-jacques"
-        },
-        {
-            "id": "fr:bieres-rousses",
-            "name": "Bières rousses",
-            "products": 17,
-            "url": "https://fr.openfoodfacts.org/categorie/bieres-rousses"
         },
         {
             "id": "fr:miels-de-thym",
@@ -10086,6 +10080,12 @@
             "name": "Curcuma en poudre",
             "products": 16,
             "url": "https://fr.openfoodfacts.org/categorie/curcuma-en-poudre"
+        },
+        {
+            "id": "en:non-food-products",
+            "name": "Non alimentaire",
+            "products": 16,
+            "url": "https://fr.openfoodfacts.org/categorie/non-alimentaire"
         },
         {
             "id": "en:black-peppercorns",
@@ -10490,6 +10490,12 @@
             "url": "https://fr.openfoodfacts.org/categorie/yaourts-a-la-noix-de-coco"
         },
         {
+            "id": "fr:terrines-de-foie",
+            "name": "Terrines de foie",
+            "products": 15,
+            "url": "https://fr.openfoodfacts.org/categorie/terrines-de-foie"
+        },
+        {
             "id": "fr:escalopes-de-poulet",
             "name": "Escalopes de poulet",
             "products": 15,
@@ -10670,6 +10676,12 @@
             "url": "https://fr.openfoodfacts.org/categorie/carottes-surgelees"
         },
         {
+            "id": "fr:tomme-des-pyrenees",
+            "name": "Tomme des Pyrénées",
+            "products": 15,
+            "url": "https://fr.openfoodfacts.org/categorie/tomme-des-pyrenees"
+        },
+        {
             "id": "fr:rotis-de-dinde",
             "name": "Rôtis de dinde",
             "products": 15,
@@ -10788,12 +10800,6 @@
             "name": "Poivrons en conserve",
             "products": 14,
             "url": "https://fr.openfoodfacts.org/categorie/poivrons-en-conserve"
-        },
-        {
-            "id": "fr:terrines-de-foie",
-            "name": "Terrines de foie",
-            "products": 14,
-            "url": "https://fr.openfoodfacts.org/categorie/terrines-de-foie"
         },
         {
             "id": "fr:pates-sablees",
@@ -11868,12 +11874,6 @@
             "name": "en:Produits-de-la-mer",
             "products": 12,
             "url": "https://fr.openfoodfacts.org/categorie/en:produits-de-la-mer"
-        },
-        {
-            "id": "fr:tomme-des-pyrenees",
-            "name": "Tomme des Pyrénées",
-            "products": 12,
-            "url": "https://fr.openfoodfacts.org/categorie/tomme-des-pyrenees"
         },
         {
             "id": "fr:filets-de-colin-d-alaska",
@@ -21212,12 +21212,6 @@
             "url": "https://fr.openfoodfacts.org/categorie/preparations-pour-boissons"
         },
         {
-            "id": "en:pet-food",
-            "name": "Nourriture pour animaux",
-            "products": 4,
-            "url": "https://fr.openfoodfacts.org/categorie/nourriture-pour-animaux"
-        },
-        {
             "id": "fr:fromages-frais-natures",
             "name": "Fromages-frais-natures",
             "products": 4,
@@ -21288,12 +21282,6 @@
             "name": "Imperial-stout",
             "products": 3,
             "url": "https://fr.openfoodfacts.org/categorie/imperial-stout"
-        },
-        {
-            "id": "fr:open-pet-food-facts",
-            "name": "Open-pet-food-facts",
-            "products": 3,
-            "url": "https://fr.openfoodfacts.org/categorie/open-pet-food-facts"
         },
         {
             "id": "en:apple-jams",
@@ -21870,12 +21858,6 @@
             "name": "Pousses frais",
             "products": 3,
             "url": "https://fr.openfoodfacts.org/categorie/pousses-frais"
-        },
-        {
-            "id": "it:grana-padano",
-            "name": "it:Grana Padano",
-            "products": 3,
-            "url": "https://fr.openfoodfacts.org/categorie/it:grana-padano"
         },
         {
             "id": "en:endives",
@@ -22782,6 +22764,12 @@
             "name": "Champagnes-bio",
             "products": 3,
             "url": "https://fr.openfoodfacts.org/categorie/champagnes-bio"
+        },
+        {
+            "id": "it:grana-padano",
+            "name": "it:Grana Padano",
+            "products": 3,
+            "url": "https://fr.openfoodfacts.org/categorie/it:grana-padano"
         },
         {
             "id": "fr:confitures-de-gingembre",
@@ -24654,12 +24642,6 @@
             "name": "Blanc-de-blancs",
             "products": 3,
             "url": "https://fr.openfoodfacts.org/categorie/blanc-de-blancs"
-        },
-        {
-            "id": "en:cat-food",
-            "name": "Nourriture pour chats",
-            "products": 3,
-            "url": "https://fr.openfoodfacts.org/categorie/nourriture-pour-chats"
         },
         {
             "id": "en:huiles-d-olive-vierges-extra",
@@ -33548,6 +33530,12 @@
             "url": "https://fr.openfoodfacts.org/categorie/yaourts-a-boire-citron"
         },
         {
+            "id": "en:pet-food",
+            "name": "Nourriture pour animaux",
+            "products": 2,
+            "url": "https://fr.openfoodfacts.org/categorie/nourriture-pour-animaux"
+        },
+        {
             "id": "fr:jus-de-canneberge",
             "name": "Jus-de-canneberge",
             "products": 2,
@@ -33852,6 +33840,12 @@
             "name": "Boissons-a-base-de-cidre",
             "products": 2,
             "url": "https://fr.openfoodfacts.org/categorie/boissons-a-base-de-cidre"
+        },
+        {
+            "id": "fr:terrines-au-vin",
+            "name": "Terrines-au-vin",
+            "products": 1,
+            "url": "https://fr.openfoodfacts.org/categorie/terrines-au-vin"
         },
         {
             "id": "fr:cafes-aromatises",
@@ -48068,12 +48062,6 @@
             "url": "https://fr.openfoodfacts.org/categorie/brumisateur"
         },
         {
-            "id": "fr:jus-de-fruits-bio",
-            "name": "Jus-de-fruits-bio",
-            "products": 1,
-            "url": "https://fr.openfoodfacts.org/categorie/jus-de-fruits-bio"
-        },
-        {
             "id": "fr:chocolats-fourres-a-la-poire",
             "name": "Chocolats-fourres-a-la-poire",
             "products": 1,
@@ -54900,6 +54888,12 @@
             "name": "es:Getreide-und-kartoffeln",
             "products": 1,
             "url": "https://fr.openfoodfacts.org/categorie/es:getreide-und-kartoffeln"
+        },
+        {
+            "id": "fr:jus-de-fruits-bio",
+            "name": "Jus-de-fruits-bio",
+            "products": 1,
+            "url": "https://fr.openfoodfacts.org/categorie/jus-de-fruits-bio"
         },
         {
             "id": "fr:viandes-traitees-en-salaison",
@@ -62354,12 +62348,6 @@
             "url": "https://fr.openfoodfacts.org/categorie/saumon-en-conserve-a-l-huile-d-olive"
         },
         {
-            "id": "en:chicoree",
-            "name": "en:Chicoree",
-            "products": 1,
-            "url": "https://fr.openfoodfacts.org/categorie/en:chicoree"
-        },
-        {
             "id": "fr:sorbets-aux-fruits-exotiques",
             "name": "Sorbets-aux-fruits-exotiques",
             "products": 1,
@@ -67178,6 +67166,12 @@
             "url": "https://fr.openfoodfacts.org/categorie/torsades-a-la-carbonara"
         },
         {
+            "id": "en:boudins",
+            "name": "en:Boudins",
+            "products": 1,
+            "url": "https://fr.openfoodfacts.org/categorie/en:boudins"
+        },
+        {
             "id": "fr:tomates-en-conserva",
             "name": "Tomates-en-conserva",
             "products": 1,
@@ -67296,6 +67290,12 @@
             "name": "en:Ratatouilles",
             "products": 1,
             "url": "https://fr.openfoodfacts.org/categorie/en:ratatouilles"
+        },
+        {
+            "id": "en:cat-food",
+            "name": "Nourriture pour chats",
+            "products": 1,
+            "url": "https://fr.openfoodfacts.org/categorie/nourriture-pour-chats"
         },
         {
             "id": "fr:asperges-blanches-miniatures",
