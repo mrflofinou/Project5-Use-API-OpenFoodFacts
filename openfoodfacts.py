@@ -19,15 +19,15 @@ def main():
     loop = True
     while loop:
         # Choose a category
-        print("\nVeuillez choisir le chiffre correspodant à votre choix:\n")
-        print("1 - Catégories")
-        print("2 - Aliments enregistrés")
+        print("\nVeuillez taper le chiffre correspodant à votre choix:\n")
+        print("1 - Quel aliment souhaitez-vous remplacer ?")
+        print("2 - Retrouver mes aliments substitués.")
         # This try-except block check the input is an integer
         try:
-            home_choice = int(input("\nQue voulez-vous faire ? "))
+            home_choice = int(input("\nEntrez votre choix ici : "))
             # Display the categories
             if home_choice == 1:
-                print("Vous voulez afficher les catégories d'aliments")
+                print("\nVeuillez selectionner une catégorie:")
                 print('\n----Catégories----')
                 for category in categories:
                     print("{:02d} | {}".format(category.id, category.name))
