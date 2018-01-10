@@ -13,8 +13,11 @@ ENGINE=INNODB;
 
 CREATE TABLE products (
   id INT UNSIGNED AUTO_INCREMENT,
-  name VARCHAR(150) NOT NULL,
   id_category INT UNSIGNED,
+  name VARCHAR(150) NOT NULL,
+  ingredients VARCHAR(500),
+  magasin VARCHAR(100),
+  url VARCHAR(200),
   PRIMARY KEY(id),
   CONSTRAINT fk_id_category
     FOREIGN KEY (id_category)
