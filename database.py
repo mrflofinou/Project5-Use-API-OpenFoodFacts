@@ -23,7 +23,7 @@ class Category(Base):
     __tablename__ = 'categories'
 
     id = Column(INTEGER(unsigned=True), primary_key=True)
-    name = Column(String(150), nullable=False)
+    name = Column(String(150), nullable=False, unique=True)
     mysql_engine ='InnoDB',
 
     def __init__(self, name):
@@ -37,18 +37,17 @@ class Product(Base):
     __tablename__ = "products"
 
     id = Column(INTEGER(unsigned=True), primary_key=True)
+    # Creation of the foreign key
+    id_category = Column(INTEGER(unsigned=True), ForeignKey('categories.id'), nullable=False)
     # Creation of a Many To One association with the ID of the categories
-    id_category = Column(INTEGER(unsigned=True), ForeignKey('categories.id'))
     category = relationship("Category", backref="products")
-    name = Column(String(150), nullable=False)
-    ingredients = Column(String(500))
+    name = Column(String(150), nullable=False, unique=True)
     magasin = Column(String(100))
     url = Column(String(200))
     mysql_engine = 'InnoDB'
 
-    def __init__(self, name, category, url):#, ingredients, magasin,):
+    def __init__(self, name, category, url):#, magasin):
         self.name = name
         self.category = category
-        # self.ingredients = ingredients
-        # self.magasin = store
+        #self.magasin = magasin
         self.url = url
