@@ -7,6 +7,8 @@ This file creates the tables of the database with the ORM SQLAlchemy
 
 import json
 import requests
+import re
+from sqlalchemy.exc import IntegrityError
 
 from database import Category, Product
 from base import Base, Session, engine
@@ -17,47 +19,46 @@ session = Session()
 # Schema mapping to create the tables
 Base.metadata.create_all(engine)
 
-# Make GET request to the API
-resp = requests.get('https://fr.openfoodfacts.org/categories.json')
-data = resp.json()
-# Save the JSON data in a file
-with open("JSON_files/categories.json", "w") as categories:
-    json.dump(data, categories, ensure_ascii=False, indent=4, sort_keys=True)
+def get_from_api(url):
+    # Make GET request to the API
+    resp = requests.get((url+".json"))
+    data = resp.json()
+    # Use regular expression to take the end of the url to name the file
+    file_name = re.search("^.+/(.+)", url)
+    # Save the JSON data in a file
+    with open("JSON_files/{}.json".format(file_name.group(1)), "w") as values: #group of regular expression
+        json.dump(data, values, ensure_ascii=False, indent=4, sort_keys=True)
+    # Creation of the dictionnary from the JSON file
+    values = json.load(open("JSON_files/{}.json".format(file_name.group(1)))) #group of regular expression
+    return values
 
-# Creation of categories
-categories = json.load(open("JSON_files/categories.json"))
+categories = get_from_api("https://fr.openfoodfacts.org/categories")
+i = 0;
 for elmt in categories["tags"]:
-    if elmt["products"] < 20000 and elmt["products"] > 2000:
-        category = Category(elmt["name"])
-        # Add the modification in database
-        session.add(category)
-        # Creation of products for each category
-        response = requests.get(elmt["url"]+".json")
-        # Problem with the category 'jus et nectar de fruits'
-        # This try - except block is a temparory patch
+    if elmt["products"] <= 2000:
+        session.begin_nested() # establish a savepoint of the session
         try:
-            data_prod = response.json()
-        except:
-            continue
-        product_file = elmt["url"].replace('https://fr.openfoodfacts.org/categorie/','')
-        # Save the JSON data in a file
-        with open("JSON_files/{}.json".format(product_file), "w") as products:
-            json.dump(data_prod, products, ensure_ascii=False, indent=4, sort_keys=True)
-        products = json.load(open("JSON_files/{}.json".format(product_file)))
+            category = Category(elmt["name"])
+            # Add the modification in data base
+            session.add(category)
+            session.fush()
+        except IntegrityError:
+            session.rollback()
+        i += 1
+        products = get_from_api(elmt["url"])
         for elemt in products["products"]:
-            product = Product(name=elemt["product_name"], category=category, url=elemt["url"])#, ingredients=elmt["ingredients_text_fr"], store=elmt["stores"])
-            # Add the modification in database
-            session.add(product)
+            session.begin_nested() # establish a savepoint of the session
+            try:
+                product = Product(name=elemt["product_name"], category=category, url=elemt["url"])#, magasin=elemt["stores"])
+                # Add the modification in database
+                session.add(product)
+                session.flush()
+            except IntegrityError:
+                session.rollback()
+        if i == 30:
+            break
 
-#Save the modifications
+#Save the modifications in data base
 session.commit()
 # Close the session
 session.close()
-
-# i=0
-# compter = json.load(open("JSON_files/categories.json"))
-# for elmt in compter["tags"]:
-#     if elmt["products"] < 20000 and elmt["products"] > 2000:
-#         print(elmt["name"])
-#         i += 1
-# print(i)
