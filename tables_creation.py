@@ -41,7 +41,7 @@ for elmt in categories["tags"]:
             category = Category(elmt["name"])
             # Add the modification in data base
             session.add(category)
-            session.fush()
+            session.flush()
         except IntegrityError:
             session.rollback()
         i += 1
