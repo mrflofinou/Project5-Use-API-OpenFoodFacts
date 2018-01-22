@@ -10,7 +10,7 @@ The tabeles are:
 
 
 from sqlalchemy import Column, Integer, String, Index, Text, ForeignKey
-from sqlalchemy.dialects.mysql import INTEGER
+from sqlalchemy.dialects.mysql import INTEGER, BIGINT
 from sqlalchemy.orm import relationship
 
 from base import Base
@@ -23,7 +23,7 @@ class Category(Base):
     __tablename__ = 'categories'
 
     id = Column(INTEGER(unsigned=True), primary_key=True)
-    name = Column(String(150), nullable=False, unique=True)
+    name = Column(String(150), nullable=False)
     mysql_engine ='InnoDB',
 
     def __init__(self, name):
@@ -37,17 +37,21 @@ class Product(Base):
     __tablename__ = "products"
 
     id = Column(INTEGER(unsigned=True), primary_key=True)
+    id_product = Column(BIGINT(unsigned=True))
     # Creation of the foreign key
     id_category = Column(INTEGER(unsigned=True), ForeignKey('categories.id'), nullable=False)
     # Creation of a Many To One association with the ID of the categories
     category = relationship("Category", backref="products")
-    name = Column(String(150), nullable=False, unique=True)
-    magasin = Column(String(100))
+    name = Column(String(150), nullable=False)
+    store = Column(String(100))
+    nutriscore = Column(String(10))
     url = Column(String(200))
     mysql_engine = 'InnoDB'
 
-    def __init__(self, name, category, url):#, magasin):
+    def __init__(self, id_product, name, category, url, nutriscore, store):
         self.name = name
+        self.id_product = id_product
         self.category = category
-        #self.magasin = magasin
+        self.store = store
+        self.nutriscore = nutriscore
         self.url = url
