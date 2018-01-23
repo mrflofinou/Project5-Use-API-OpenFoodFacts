@@ -1,6 +1,6 @@
 __pycache__
 env/
 settings.py
-API_interaction.py
+API_interactions.py
 database_creation.sql
 JSON_files/
