@@ -49,7 +49,7 @@ def main():
                 print("\nVotre saisie est incorrect\n")
                 continue
             # To make a SELECT query in the table categories
-            categories = session.query(Category).all() # categories is a list wich contains objects of the table category
+            categories = session.query(Category).order_by(Category.id).all() # categories is a list wich contains objects of the table category
             # Display the categories
             if home_choice == 1:
                 print("\nVeuillez selectionner une catégorie:")
@@ -123,10 +123,7 @@ def main():
                 # To find a substitute
                 for elmt in product_chosen:
                     prod_chosen = elmt
-                    # if elmt.nutriscore == "a":
-                    #     print("L'aliment que vous avez choisi a un nutriscore 'A'. Il n'y a donc pas de substitut correspondant à cet aliment")
-                    # else :
-                    #     # I sort the products according to their 'nutriscore' and i choose the first five
+                    # I sort the products according to their 'nutriscore' and i choose the first five
                     substitutes_list = sorted(products, key=attrgetter("nutriscore"))
                     print("\nVoici une liste de cinq substituts ayant un meilleur nutriscore que: {}".format(elmt.name))
                     for i in range(0, 5):
@@ -165,7 +162,13 @@ def main():
                     # To save the 5 substitutes
                     if save_mode == 1:
                         for i in range(0, 5):
-                            sub = Substitute(name=substitutes_list[i].name, substitute=substitutes_list[i].id_product, product=prod_chosen.id_product, store=substitutes_list[i].store, url=substitutes_list[i].url)
+                            sub = Substitute(
+                            name = substitutes_list[i].name,
+                            substitute = substitutes_list[i].id_product,
+                            product = prod_chosen.id_product,
+                            store = substitutes_list[i].store,
+                            url = substitutes_list[i].url
+                            )
                             session.add(sub)
                         session.commit()
                         check = False
@@ -178,7 +181,12 @@ def main():
                             except ValueError:
                                 print("\nVotre saisie est incorrect\n")
                                 continue
-                            sub = Substitute(name=substitutes_list[save_substitute - 1].name, substitute=substitutes_list[save_substitute - 1].id_product, product=prod_chosen.id_product, store=substitutes_list[save_substitute - 1].store, url=substitutes_list[save_substitute - 1].url)
+                            sub = Substitute(
+                            name = substitutes_list[save_substitute - 1].name,
+                            substitute = substitutes_list[save_substitute - 1].id_product,
+                            product = prod_chosen.id_product, store=substitutes_list[save_substitute - 1].store,
+                            url = substitutes_list[save_substitute - 1].url
+                            )
                             session.add(sub)
                             session.commit()
                             check_save = False
