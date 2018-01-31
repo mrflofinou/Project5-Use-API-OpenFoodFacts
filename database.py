@@ -23,7 +23,8 @@ class Category(Base):
     __tablename__ = 'categories'
 
     id = Column(INTEGER(unsigned=True), primary_key=True)
-    name = Column(String(150), nullable=False)
+    product = relationship("Product", backref="categories")
+    name = Column(String(150), nullable=False, unique=True)
     mysql_engine ='InnoDB',
 
     def __init__(self, name):
@@ -37,7 +38,7 @@ class Product(Base):
     __tablename__ = "products"
 
     id = Column(INTEGER(unsigned=True), primary_key=True)
-    id_product = Column(BIGINT(unsigned=True))
+    id_product = Column(BIGINT(unsigned=True), unique=True)
     # Creation of the foreign key
     id_category = Column(INTEGER(unsigned=True), ForeignKey('categories.id'), nullable=False)
     # Creation of a Many To One association with the ID of the categories
@@ -48,10 +49,31 @@ class Product(Base):
     url = Column(String(200))
     mysql_engine = 'InnoDB'
 
-    def __init__(self, id_product, name, category, url, nutriscore, store):
+    def __init__(self, name, id_product, id_category, store,  nutriscore, url):
         self.name = name
         self.id_product = id_product
-        self.category = category
+        self.id_category = id_category
         self.store = store
         self.nutriscore = nutriscore
+        self.url = url
+
+
+class Substitute(Base):
+    """
+    This class defines the table of the substitutes
+    """
+    __tablename__ = "substitutes"
+
+    id = Column(INTEGER(unsigned=True), primary_key=True)
+    id_substitute = Column(BIGINT(unsigned=True), nullable=False)
+    id_product_substituted = Column(BIGINT(unsigned=True), nullable=False)
+    name = Column(String(150), nullable=False)
+    store = Column(String(100))
+    url = Column(String(200))
+
+    def __init__(self, name, substitute, product, store, url):
+        self.name = name
+        self.id_substitute = substitute
+        self.id_product_substituted = product
+        self.store = store
         self.url = url
