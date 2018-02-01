@@ -6,6 +6,7 @@ This file defines the tables of the database with the ORM SQLAlchemy
 The tabeles are:
     - categories
     - products
+    - substitutes
 """
 
 
@@ -23,12 +24,8 @@ class Category(Base):
     __tablename__ = 'categories'
 
     id = Column(INTEGER(unsigned=True), primary_key=True)
-    product = relationship("Product", backref="categories")
     name = Column(String(150), nullable=False, unique=True)
-    mysql_engine ='InnoDB',
-
-    def __init__(self, name):
-        self.name = name
+    mysql_engine ='InnoDB'
 
 
 class Product(Base):
@@ -37,8 +34,7 @@ class Product(Base):
     """
     __tablename__ = "products"
 
-    id = Column(INTEGER(unsigned=True), primary_key=True)
-    id_product = Column(BIGINT(unsigned=True), unique=True)
+    id = Column(BIGINT(unsigned=True), primary_key=True)
     # Creation of the foreign key
     id_category = Column(INTEGER(unsigned=True), ForeignKey('categories.id'), nullable=False)
     # Creation of a Many To One association with the ID of the categories
@@ -48,14 +44,6 @@ class Product(Base):
     nutriscore = Column(String(10))
     url = Column(String(200))
     mysql_engine = 'InnoDB'
-
-    def __init__(self, name, id_product, id_category, store,  nutriscore, url):
-        self.name = name
-        self.id_product = id_product
-        self.id_category = id_category
-        self.store = store
-        self.nutriscore = nutriscore
-        self.url = url
 
 
 class Substitute(Base):
@@ -70,10 +58,3 @@ class Substitute(Base):
     name = Column(String(150), nullable=False)
     store = Column(String(100))
     url = Column(String(200))
-
-    def __init__(self, name, substitute, product, store, url):
-        self.name = name
-        self.id_substitute = substitute
-        self.id_product_substituted = product
-        self.store = store
-        self.url = url
