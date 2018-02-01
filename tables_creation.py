@@ -7,6 +7,7 @@ This file creates the tables of the database with the ORM SQLAlchemy
 
 import json
 import requests
+from sqlalchemy import desc
 from sqlalchemy.sql.expression import insert
 
 from database import Category, Product
@@ -28,34 +29,36 @@ def get_from_api(url):
     return data
 
 categories = get_from_api("https://fr.openfoodfacts.org/categories")
-i = 0;
+i = 0
 for elmt in categories["tags"]:
     # No nutrition grades for beers and wines
     if elmt["products"] < 2000:
         categories = insert(Category).prefix_with("IGNORE")
         cat_values = {'name': elmt["name"]}
         session.execute(categories, cat_values)
+        #Save the modifications in data base
+        session.commit()
         i += 1
         # Get products from page 1 to page 5
         for j in range(1, 6):
             products = get_from_api(elmt["url"]+"/{}".format(j))
             for elemt in products["products"]:
+                # id_category = session.query(Category).order_by(desc(Category.id)).first()
                 # Insert data in database
                 product = insert(Product).prefix_with("IGNORE")
                 product_values = {
                 'name': elemt["product_name"],
-                'id_product': elemt["_id"],
+                'id': elemt["_id"],
                 'id_category': i,
                 'store': elemt.get("stores"),
                 'nutriscore': elemt.get("nutrition_grade_fr", "e"),
                 'url': elemt["url"]
                 }
                 session.execute(product, product_values)
-                # session.add(product)
+                #Save the modifications in data base
+                session.commit()
         if i == 30:
             break
 
-#Save the modifications in data base
-session.commit()
 # Close the session
 session.close()
