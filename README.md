@@ -14,4 +14,4 @@ If you want, you can save a substitute in the database to see it later.
 
 ## What have you need ?
 To use this app you need:  
-* https://www.python.org/downloads/[Python3.5 or more](https://www.python.org)
+  * [Python3.5 or more](https://www.python.org/downloads/)
