@@ -15,8 +15,6 @@ from base import Session
 from database import Category, Product, Substitute
 
 
-session = Session()
-
 def main():
     # Main loop
     application = True
@@ -89,6 +87,7 @@ def main():
                 products = session.query(Product) \
                     .join(Category) \
                     .filter(Category.id == category_choice) \
+                    .order_by(Product.id) \
                     .all()
                 # To display the name of the category
                 # I use categories list
@@ -97,10 +96,12 @@ def main():
                 print("\n---- {} ----\n".format(categories[category_choice - 1].name))
                 # id_prod will allows to check the input for to choose a product
                 id_prod = []
+                i = 1
                 for prod in products:
-                    id_prod.append(prod.id)
+                    id_prod.append(i)
                     # To display the products of the chosen category
-                    print("{:03d} | {:100s} | Nutriscrore: {}".format(prod.id, prod.name, prod.nutriscore))
+                    print("{:03d} | {:100s} | Nutriscrore: {}".format(i, prod.name, prod.nutriscore))
+                    i += 1
                 # To out of category loop
                 category = False
                 # To in in the product loop
@@ -117,20 +118,41 @@ def main():
                 continue
             # To choose a product
             if product_choice in id_prod: # To verify the user input is in the list of products
-                product_chosen = session.query(Product) \
-                    .filter(Product.id == product_choice) \
-                    .all()
-                # To find a substitute
-                for elmt in product_chosen:
-                    prod_chosen = elmt
-                    # I sort the products according to their 'nutriscore' and i choose the first five
-                    substitutes_list = sorted(products, key=attrgetter("nutriscore"))
-                    print("\nVoici une liste de cinq substituts ayant un meilleur nutriscore que: {}".format(elmt.name))
-                    for i in range(0, 5):
-                        # The substitutes don't must be the chosen product and must have a lower 'nutriscore'
-                        if substitutes_list[i].id_product != prod_chosen.id_product or substitutes_list[i].nutriscore <= prod_chosen.nutriscore:
+                product_chosen = products[product_choice - 1]
+                # I sort the products according to their 'nutriscore' and i choose the first five
+                substitutes_list = sorted(products, key=attrgetter("nutriscore"))
+                print("\nVoici une liste de substituts ayant un meilleur nutriscore que: {}".format(product_chosen.name))
+                substitutes_choice = []
+                if len(substitutes_list) > 5:
+                    h = 0
+                    g = 0
+                    while h != 5:
+                        # The substitutes don't must be the chosen product
+                        if substitutes_list[g].id != product_chosen.id:
                             # Display the substitutes
-                            print("\n{}:\nProduit: {} \nMagasin: {} \nNutriscore: {} \nUrl: {}".format(i+1, substitutes_list[i].name, substitutes_list[i].store, substitutes_list[i].nutriscore, substitutes_list[i].url))
+                            print("\n{}:\nProduit: {} \nMagasin: {} \nNutriscore: {} \nUrl: {}".format(h+1,
+                                                                                                substitutes_list[g].name,
+                                                                                                substitutes_list[g].store,
+                                                                                                substitutes_list[g].nutriscore,
+                                                                                                substitutes_list[g].url)
+                                                                                                )
+                            # I save the 5 substitutes in a list with the goal the user will can choose to save one of them.
+                            substitutes_choice.append(substitutes_list[g])
+                            h += 1
+                            g += 1
+                        else:
+                            g += 1
+                else:
+                    for i,prod in enumerate(substitutes_list):
+                        # Display the substitutes
+                        print("\n{}:\nProduit: {} \nMagasin: {} \nNutriscore: {} \nUrl: {}".format(i+1,
+                                                                                            substitutes_list[i].name,
+                                                                                            substitutes_list[i].store,
+                                                                                            substitutes_list[i].nutriscore,
+                                                                                            substitutes_list[i].url)
+                                                                                            )
+                        # I save the substitutes in a list with the goal the user will can choose to save one of them
+                        substitutes_choice.append(substitutes_list[i])
                 product = False
                 save = True
             else:
@@ -149,50 +171,33 @@ def main():
                 continue
             # To save the substitutes
             if save_choice == 1:
-                print("\nVous souhaitez:")
-                print("1 - Sauvegarder les 5 substituts")
-                print("2 - Sauvegarder un seul substitut")
                 check = True
                 while check:
+                    # To save a chosen substitute
                     try:
-                        save_mode = int(input("\nEntrez votre choix ici: "))
+                        save_substitute = int(input("\nVeuillez choisir le substitut que vous souhaitez enregistrer: "))
                     except ValueError:
                         print("\nVotre saisie est incorrect\n")
                         continue
-                    # To save the 5 substitutes
-                    if save_mode == 1:
-                        for i in range(0, 5):
-                            sub = Substitute(
-                            name = substitutes_list[i].name,
-                            substitute = substitutes_list[i].id_product,
-                            product = prod_chosen.id_product,
-                            store = substitutes_list[i].store,
-                            url = substitutes_list[i].url
-                            )
-                            session.add(sub)
-                        session.commit()
-                        check = False
-                    # To save a chosen substitute
-                    elif save_mode == 2:
-                        check_save = True
-                        while check_save:
-                            try:
-                                save_substitute = int(input("\nVeuillez choisir le substitut que vous souhaitez enregistrer: "))
-                            except ValueError:
-                                print("\nVotre saisie est incorrect\n")
-                                continue
-                            sub = Substitute(
-                            name = substitutes_list[save_substitute - 1].name,
-                            substitute = substitutes_list[save_substitute - 1].id_product,
-                            product = prod_chosen.id_product, store=substitutes_list[save_substitute - 1].store,
-                            url = substitutes_list[save_substitute - 1].url
-                            )
-                            session.add(sub)
-                            session.commit()
-                            check_save = False
-                            check = False
+                    if substitutes_choice[save_substitute - 1].store == "NULL":
+                        sub = Substitute(
+                        name = substitutes_choice[save_substitute - 1].name,
+                        id_substitute = substitutes_choice[save_substitute - 1].id,
+                        id_product_substituted = product_chosen.id,
+                        store = "",
+                        url = substitutes_choice[save_substitute - 1].url
+                        )
                     else:
-                        print("\nVotre choix ne correspond pas à ceux proposés\n")
+                        sub = Substitute(
+                        name = substitutes_choice[save_substitute - 1].name,
+                        id_substitute = substitutes_choice[save_substitute - 1].id,
+                        id_product_substituted = product_chosen.id,
+                        store = "",
+                        url = substitutes_choice[save_substitute - 1].url
+                        )
+                    session.add(sub)
+                    session.commit()
+                    check = False
                 save = False
                 home = True
             elif save_choice == 2:
@@ -205,5 +210,6 @@ def main():
                 print("\nVotre choix ne correspond pas à ceux proposés\n")
 
 if __name__ == "__main__":
+    session = Session()
     main()
     session.close()
