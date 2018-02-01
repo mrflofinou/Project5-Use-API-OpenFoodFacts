@@ -12,10 +12,11 @@ CREATE TABLE categories (
 ENGINE=INNODB;
 
 CREATE TABLE products (
-  id INT UNSIGNED AUTO_INCREMENT,
-  id_category BIGINT UNSIGNED,
+  id BIGINT UNSIGNED AUTO_INCREMENT,
+  id_category INT UNSIGNED,
   name VARCHAR(150) NOT NULL,
   magasin VARCHAR(100),
+  nutriscore VARCHAR(10),
   url VARCHAR(200),
   PRIMARY KEY(id),
   CONSTRAINT fk_id_category
