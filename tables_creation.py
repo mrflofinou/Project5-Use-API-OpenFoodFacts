@@ -7,7 +7,6 @@ This file creates the tables of the database with the ORM SQLAlchemy
 
 import json
 import requests
-from sqlalchemy import desc
 from sqlalchemy.sql.expression import insert
 
 from database import Category, Product
@@ -38,18 +37,19 @@ for elmt in categories["tags"]:
         session.execute(categories, cat_values)
         #Save the modifications in data base
         session.commit()
+        # this request will allow to select the id of the category for the products
+        category = session.query(Category).filter(Category.name == elmt["name"]).all()
         i += 1
         # Get products from page 1 to page 5
         for j in range(1, 6):
             products = get_from_api(elmt["url"]+"/{}".format(j))
             for elemt in products["products"]:
-                # id_category = session.query(Category).order_by(desc(Category.id)).first()
                 # Insert data in database
                 product = insert(Product).prefix_with("IGNORE")
                 product_values = {
                 'name': elemt["product_name"],
                 'id': elemt["_id"],
-                'id_category': i,
+                'id_category': category[0].id,
                 'store': elemt.get("stores"),
                 'nutriscore': elemt.get("nutrition_grade_fr", "e"),
                 'url': elemt["url"]
