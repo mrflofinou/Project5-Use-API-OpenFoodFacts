@@ -123,6 +123,7 @@ def main():
                 substitutes_list = sorted(products, key=attrgetter("nutriscore"))
                 print("\nVoici une liste de substituts ayant un meilleur nutriscore que: {}".format(product_chosen.name))
                 substitutes_choice = []
+                # if there are more of 5 products
                 if len(substitutes_list) > 5:
                     h = 0
                     g = 0
@@ -192,7 +193,7 @@ def main():
                         name = substitutes_choice[save_substitute - 1].name,
                         id_substitute = substitutes_choice[save_substitute - 1].id,
                         id_product_substituted = product_chosen.id,
-                        store = "",
+                        store = substitutes_choice[save_substitute - 1].store,
                         url = substitutes_choice[save_substitute - 1].url
                         )
                     session.add(sub)
