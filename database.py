@@ -53,8 +53,6 @@ class Substitute(Base):
     __tablename__ = "substitutes"
 
     id = Column(INTEGER(unsigned=True), primary_key=True)
-    id_substitute = Column(BIGINT(unsigned=True), nullable=False)
-    id_product_substituted = Column(BIGINT(unsigned=True), nullable=False)
     name = Column(String(150), nullable=False)
     store = Column(String(100))
     url = Column(String(200))
