@@ -65,10 +65,41 @@ def main():
             # Display the saved products
             elif home_choice == 2:
                 substitutes = session.query(Substitute).all()
+                id_sub = []
                 for substit in substitutes:
                     # To display the saved substitutes
                     print("{:02d} | {:50s} | {:10s} | {}".format(substit.id, substit.name, substit.store, substit.url))
-                home_menu = input("\nAppuyez sur Entrée pour retourner au menu principal: ")
+                    id_sub.append(substit.id)
+                print("\nQue souhaitez-vous faire ?")
+                print("1 - Retourner au menu principal")
+                print("2 - Supprimer un substitut")
+                substitute_save = True
+                while substitute_save:
+                    try:
+                        home_substitutes = int(input("\nEntrez votre choix: "))
+                    except ValueError:
+                        print("\nVotre saisie est incorrect\n")
+                        continue
+                    if home_substitutes == 1:
+                        substitute_save = False
+                    elif home_substitutes == 2:
+                        delete_substitute = True
+                        while delete_substitute:
+                            try:
+                                delete_id = int(input("Veuiller entrer le numéro d'identifiant du substitut à supprimer: "))
+                            except ValueError:
+                                print("\nVotre saisie est incorrect\n")
+                                continue
+                            if delete_id in id_sub:
+                                delete_sub = session.query(Substitute).filter(Substitute.id == delete_id).one()
+                                session.delete(delete_sub)
+                                session.commit()
+                                delete_substitute = False
+                                substitute_save = False
+                            else:
+                                print("\nL'identifiant choisi n'existe pas.")
+                    else:
+                        print("Votre choix ne correspond pas à ceux proposés\n")
             elif home_choice == 3:
                 home = False
                 application = False
@@ -184,7 +215,6 @@ def main():
                         sub = Substitute(
                         name = substitutes_choice[save_substitute - 1].name,
                         id_substitute = substitutes_choice[save_substitute - 1].id,
-                        id_product_substituted = product_chosen.id,
                         store = "",
                         url = substitutes_choice[save_substitute - 1].url
                         )
@@ -192,7 +222,6 @@ def main():
                         sub = Substitute(
                         name = substitutes_choice[save_substitute - 1].name,
                         id_substitute = substitutes_choice[save_substitute - 1].id,
-                        id_product_substituted = product_chosen.id,
                         store = substitutes_choice[save_substitute - 1].store,
                         url = substitutes_choice[save_substitute - 1].url
                         )
