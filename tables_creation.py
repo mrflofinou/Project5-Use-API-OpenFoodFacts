@@ -30,7 +30,6 @@ def get_from_api(url):
 categories = get_from_api("https://fr.openfoodfacts.org/categories")
 i = 0
 for elmt in categories["tags"]:
-    # No nutrition grades for beers and wines
     if elmt["products"] < 2000:
         categories = insert(Category).prefix_with("IGNORE")
         cat_values = {'name': elmt["name"]}
@@ -38,10 +37,11 @@ for elmt in categories["tags"]:
         #Save the modifications in data base
         session.commit()
         # this request will allow to select the id of the category for the products
-        category = session.query(Category).filter(Category.name == elmt["name"]).all()
+        category = session.query(Category).filter(Category.name == elmt["name"]).one()
         i += 1
         # Get products from page 1 to page 5
         for j in range(1, 6):
+            # Add the modification in the session
             products = get_from_api(elmt["url"]+"/{}".format(j))
             for elemt in products["products"]:
                 # Insert data in database
@@ -49,7 +49,7 @@ for elmt in categories["tags"]:
                 product_values = {
                 'name': elemt["product_name"],
                 'id': elemt["_id"],
-                'id_category': category[0].id,
+                'id_category': category.id,
                 'store': elemt.get("stores"),
                 'nutriscore': elemt.get("nutrition_grade_fr", "e"),
                 'url': elemt["url"]
@@ -57,8 +57,10 @@ for elmt in categories["tags"]:
                 session.execute(product, product_values)
                 #Save the modifications in data base
                 session.commit()
+        # I want insert 30 categories
         if i == 30:
             break
+
 
 # Close the session
 session.close()
