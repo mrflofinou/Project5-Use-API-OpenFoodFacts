@@ -5,7 +5,6 @@
 This file creates the tables of the database with the ORM SQLAlchemy
 """
 
-#import json
 import requests
 from sqlalchemy.sql.expression import insert
 
