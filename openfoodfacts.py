@@ -83,7 +83,11 @@ def main():
                     if home_substitutes == 1:
                         substitute_save = False
                     elif home_substitutes == 2:
-                        delete_substitute = True
+                        if len(id_sub) == 0:
+                            print("Il n'y a aucun substitut d'enregistré")
+                            delete_substitute = False
+                        else:
+                            delete_substitute = True
                         while delete_substitute:
                             try:
                                 delete_id = int(input("Veuiller entrer le numéro d'identifiant du substitut à supprimer: "))
@@ -103,6 +107,7 @@ def main():
             elif home_choice == 3:
                 home = False
                 application = False
+                os.system('cls' if os.name == 'nt' else 'clear') # To clear the terminal
             else:
                 print("Votre choix ne correspond pas à ceux proposés\n")
 
@@ -120,6 +125,9 @@ def main():
                     .filter(Category.id == category_choice) \
                     .order_by(Product.id) \
                     .all()
+                if len(products) == 0:
+                    print("Cette catégorie est vide")
+                    continue
                 # To display the name of the category
                 # I use categories list
                 # This list contains the objects of the table categories
@@ -214,14 +222,12 @@ def main():
                     if substitutes_choice[save_substitute - 1].store == "NULL":
                         sub = Substitute(
                         name = substitutes_choice[save_substitute - 1].name,
-                        id_substitute = substitutes_choice[save_substitute - 1].id,
                         store = "",
                         url = substitutes_choice[save_substitute - 1].url
                         )
                     else:
                         sub = Substitute(
                         name = substitutes_choice[save_substitute - 1].name,
-                        id_substitute = substitutes_choice[save_substitute - 1].id,
                         store = substitutes_choice[save_substitute - 1].store,
                         url = substitutes_choice[save_substitute - 1].url
                         )
@@ -236,6 +242,7 @@ def main():
             elif save_choice == 3:
                 save = False
                 application = False
+                os.system('cls' if os.name == 'nt' else 'clear') # To clear the terminal
             else:
                 print("\nVotre choix ne correspond pas à ceux proposés\n")
 
