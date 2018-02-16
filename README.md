@@ -37,6 +37,9 @@ To use this app you need:
   `CREATE DATABASE openfoodfacts CHARACTER SET 'utf8';`
 
  * In the file 'settings.py' modify the connection parameters of your MySQL account  
+ 
+ * To launch the file tables_creation.py to create the tables and insert values inside them  
+  `python3 tables_creation.py`
 
  * To launch the app  
   `python3 openfoodfacts.py`
