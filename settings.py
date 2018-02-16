@@ -1,7 +1,7 @@
 """This file contains username and password for the connexion to the database"""
 
-username = 'florian'
-password = '01032011'
+username = ''
+password = ''
 
 # Default I have chosen to display 30 categories
 # You can modify this limit if you want
