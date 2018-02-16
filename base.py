@@ -13,7 +13,7 @@ import settings as s
 
 # Creation of engine with our database (here mysql) and the DBAPI (here pymysql)
 # DON'T FORGET THE CHARSET UTF8 !
-engine = create_engine('mysql+pymysql://{}:{}@localhost/test_projet05?charset=utf8'.format(s.username, s.password))
+engine = create_engine('mysql+pymysql://{}:{}@localhost/{}?charset=utf8'.format(s.username, s.password, s.database_name))
 Session = sessionmaker(bind=engine)
 
 Base = declarative_base()
