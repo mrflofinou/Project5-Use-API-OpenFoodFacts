@@ -27,6 +27,27 @@ def get_from_api(url):
     data = resp.json()
     return data
 
+def insert_in_database(elmt, Product, category):
+    """
+    Function to insert values in the database
+    """
+    for j in range(1, 6):
+        products = get_from_api(elmt["url"]+"/{}".format(j))
+        for elemt in products["products"]:
+            # Insert data in database
+            product = insert(Product).prefix_with("IGNORE")
+            product_values = {
+            'name': elemt.get("product_name"),
+            'id': elemt["_id"],
+            'id_category': category.id,
+            'store': elemt.get("stores"),
+            'nutriscore': elemt.get("nutrition_grade_fr", "e"),
+            'url': elemt["url"]
+            }
+            session.execute(product, product_values)
+            #Save the modifications in data base
+            session.commit()
+
 # I select all of the categories in the database
 categories_list = session.query(Category).all()
 # get the categories with the API
@@ -45,22 +66,7 @@ if len(categories_list) < limit:
             # I select all of the categories in the database to know its length
             categories_length = session.query(Category).all()
             # Get products from page 1 to page 5
-            for j in range(1, 6):
-                products = get_from_api(elmt["url"]+"/{}".format(j))
-                for elemt in products["products"]:
-                    # Insert data in database
-                    product = insert(Product).prefix_with("IGNORE")
-                    product_values = {
-                    'name': elemt.get("product_name"),
-                    'id': elemt["_id"],
-                    'id_category': category.id,
-                    'store': elemt.get("stores"),
-                    'nutriscore': elemt.get("nutrition_grade_fr", "e"),
-                    'url': elemt["url"]
-                    }
-                    session.execute(product, product_values)
-                    #Save the modifications in data base
-                    session.commit()
+            insert_in_database(elmt, Product, category)
             # I want insert 30 categories
             if len(categories_length) == limit:
                 break
@@ -71,22 +77,7 @@ else:
     for elmt in categories["tags"]:
         if elmt["name"] in categories_names:
             category = session.query(Category).filter(Category.name == elmt["name"]).one()
-            for j in range(1, 6):
-                products = get_from_api(elmt["url"]+"/{}".format(j))
-                for elemt in products["products"]:
-                    # Insert data in database
-                    product = insert(Product).prefix_with("IGNORE")
-                    product_values = {
-                    'name': elemt.get("product_name"),
-                    'id': elemt["_id"],
-                    'id_category': category.id,
-                    'store': elemt.get("stores"),
-                    'nutriscore': elemt.get("nutrition_grade_fr", "e"),
-                    'url': elemt["url"]
-                    }
-                    session.execute(product, product_values)
-                    #Save the modifications in data base
-                    session.commit()
+            insert_in_database(elmt, Product, category)
 
 # Close the session
 session.close()
