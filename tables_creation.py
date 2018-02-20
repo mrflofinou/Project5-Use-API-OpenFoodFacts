@@ -44,7 +44,6 @@ if len(categories_list) < limit:
             category = session.query(Category).filter(Category.name == elmt["name"]).one()
             # I select all of the categories in the database to know its length
             categories_length = session.query(Category).all()
-            #i += 1
             # Get products from page 1 to page 5
             for j in range(1, 6):
                 products = get_from_api(elmt["url"]+"/{}".format(j))
@@ -65,6 +64,7 @@ if len(categories_list) < limit:
             # I want insert 30 categories
             if len(categories_length) == limit:
                 break
+# If there are 30 categories in the database, we update with new products
 else:
     # I save the names of the categories in a list
     categories_names = [category.name for category in categories_list]
