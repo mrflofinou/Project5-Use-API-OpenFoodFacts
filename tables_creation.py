@@ -37,10 +37,10 @@ def insert_in_database(elmt, Product, category):
             # Insert data in database
             product = insert(Product).prefix_with("IGNORE")
             product_values = {
-            'name': elemt.get("product_name"),
+            'name': elemt.get("product_name", "'Pas de nom renseigné'"),
             'id': elemt["_id"],
             'id_category': category.id,
-            'store': elemt.get("stores"),
+            'store': elemt.get("stores",""),
             'nutriscore': elemt.get("nutrition_grade_fr", "e"),
             'url': elemt["url"]
             }
