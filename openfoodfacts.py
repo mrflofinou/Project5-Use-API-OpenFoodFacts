@@ -124,7 +124,6 @@ def main():
                 products = session.query(Product) \
                     .join(Category) \
                     .filter(Category.id == category_choice) \
-                    .order_by(Product.id) \
                     .all()
                 if len(products) == 0:
                     print("Cette catégorie est vide")
@@ -177,7 +176,7 @@ def main():
                                                                                                 substitutes_list[g].nutriscore,
                                                                                                 substitutes_list[g].url)
                                                                                                 )
-                            # I save the 5 substitutes in a list with the goal the user will can choose to save one of them.
+                            # I save the 5 substitutes in a list with the goal the user will can choose to save one of them.
                             substitutes_choice.append(substitutes_list[g])
                             h += 1
                             g += 1
@@ -192,7 +191,7 @@ def main():
                                                                                             substitutes_list[i].nutriscore,
                                                                                             substitutes_list[i].url)
                                                                                             )
-                        # I save the substitutes in a list with the goal the user will can choose to save one of them
+                        # I save the substitutes in a list with the goal the user will can choose to save one of them
                         substitutes_choice.append(substitutes_list[i])
                 product = False
                 save = True
@@ -220,18 +219,11 @@ def main():
                     except ValueError:
                         print("\nVotre saisie est incorrect\n")
                         continue
-                    if substitutes_choice[save_substitute - 1].store == "NULL":
-                        sub = Substitute(
-                        name = substitutes_choice[save_substitute - 1].name,
-                        store = "",
-                        url = substitutes_choice[save_substitute - 1].url
-                        )
-                    else:
-                        sub = Substitute(
-                        name = substitutes_choice[save_substitute - 1].name,
-                        store = substitutes_choice[save_substitute - 1].store,
-                        url = substitutes_choice[save_substitute - 1].url
-                        )
+                    sub = Substitute(
+                    name = substitutes_choice[save_substitute - 1].name,
+                    store = substitutes_choice[save_substitute - 1].store,
+                    url = substitutes_choice[save_substitute - 1].url
+                    )
                     session.add(sub)
                     session.commit()
                     check = False
