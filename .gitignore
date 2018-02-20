@@ -1,5 +1,3 @@
 __pycache__
 env/
-API_interactions.py
-database_creation.sql
 JSON_files/
