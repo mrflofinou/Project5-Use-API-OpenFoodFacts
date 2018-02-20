@@ -82,6 +82,7 @@ def main():
                         continue
                     if home_substitutes == 1:
                         substitute_save = False
+                    # To delete a substitute form the database
                     elif home_substitutes == 2:
                         if len(id_sub) == 0:
                             print("Il n'y a aucun substitut d'enregistré")
@@ -148,7 +149,7 @@ def main():
             else:
                 print("\nVotre choix ne correspond pas à ceux proposés\n")
 
-        # Loop to display the product
+        # Loop to display the substitute of the product chosen
         while product:
             try:
                 product_choice = int(input("\nEntrez votre choix ici : "))
